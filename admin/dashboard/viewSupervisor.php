@@ -25,7 +25,7 @@ require '../sessions/admin_session.php';
 <div id="wrapper">
 
     <?php
-    require 'admin.php';
+    require '../layouts/admin_layout.php';
     ?>
 
     <div class="clearfix"></div>
@@ -65,7 +65,7 @@ require '../sessions/admin_session.php';
                         //connect to the database mysql
                         //check for connection failures
                         if ($connection) {
-                            $result = mysqli_query($connection, "SELECT * FROM supervisor_table");
+                            $result = mysqli_query($connection, "SELECT * FROM supervisor_table ORDER BY id DESC ");
                             if ($result == TRUE) {
                                 echo '<div class="card-header"><i class="fa fa-table"></i> Supervisors Details</div>';
                                 echo '<div class="card-body">';

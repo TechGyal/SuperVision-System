@@ -9,7 +9,7 @@ require '../sessions/admin_session.php';
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php echo $appName ?>::Supervisor Details</title>
+    <title><?php echo $appName ?>::Student Details</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -25,7 +25,7 @@ require '../sessions/admin_session.php';
 <div id="wrapper">
 
     <?php
-    require 'admin.php';
+    require '../layouts/admin_layout.php';
     ?>
 
     <div class="clearfix"></div>
@@ -65,7 +65,7 @@ require '../sessions/admin_session.php';
                         //connect to the database mysql
                         //check for connection failures
                         if ($connection) {
-                            $result = mysqli_query($connection, "SELECT * FROM student_table");
+                            $result = mysqli_query($connection, "SELECT * FROM student_table ORDER BY id DESC ");
                             if ($result == TRUE) {
                                 echo '<div class="card-header"><i class="fa fa-table"></i> Student Details</div>';
                                 echo '<div class="card-body">';

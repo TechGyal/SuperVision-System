@@ -10,7 +10,7 @@ if (isset($_SESSION['login_admin'])) {
     header("location: ../admin/dashboard/home.php");
 } else if (isset($_SESSION['login_supervisor'])) {
     header("location: ../supervisor/dashboard/home.php");
-} else if (isset($_SESSION['login_supervisor'])) {
+} else if (isset($_SESSION['login_student'])) {
     header("location: dashboard/home.php");
 }
 ?>

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * have your all includes here
@@ -9,9 +8,10 @@ require '../functions/login_function.php';
 
 if (isset($_SESSION['login_admin'])) {
     header("location: dashboard/home.php");
-}
- else if (isset($_SESSION['login_supervisor'])) {
+} else if (isset($_SESSION['login_supervisor'])) {
     header("location: ../supervisor/dashboard/home.php");
+} else if (isset($_SESSION['login_student'])) {
+    header("location: ../student/dashboard/home.php");
 }
 ?>
 <!doctype html>
@@ -42,7 +42,8 @@ if (isset($_SESSION['login_admin'])) {
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="national_id" class="sr-only">Enter National ID</label>
-                            <input type="text" id="national_id" name="national_id" class="form-control form-control-rounded"
+                            <input type="text" id="national_id" name="national_id"
+                                   class="form-control form-control-rounded"
                                    placeholder="Enter National ID" required>
                             <div class="form-control-position">
                                 <i class="icon-user"></i>
@@ -52,7 +53,8 @@ if (isset($_SESSION['login_admin'])) {
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="password" class="sr-only">Password</label>
-                            <input type="password" id="password" name="password" class="form-control form-control-rounded"
+                            <input type="password" id="password" name="password"
+                                   class="form-control form-control-rounded"
                                    placeholder="Password" required>
                             <div class="form-control-position">
                                 <i class="icon-lock"></i>

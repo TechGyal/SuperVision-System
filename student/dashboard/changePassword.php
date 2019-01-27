@@ -26,7 +26,7 @@ require '../../functions/reset_password_function.php';
 <div id="wrapper">
 
     <?php
-    require 'student.php';
+    require '../layouts/student_layout.php';
     ?>
 
     <div class="clearfix"></div>

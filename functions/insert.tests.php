@@ -16,9 +16,9 @@ require('../inc/appNames.php');
 $admin_name = $adminName;
 $national_id = $nationalID;
 $email = $adminEmail;
-//generate a random secret code btn 100000-50000
+//generate a random secret code
 try {
-    $secret_code = random_int(10000, 50000);
+	$secret_code = strtoupper(bin2hex(openssl_random_pseudo_bytes(5)));
 } catch (Exception $e) {
     return 504;
 }

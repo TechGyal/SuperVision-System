@@ -25,7 +25,7 @@ require '../sessions/supervisor_session.php';
 <div id="wrapper">
 
     <?php
-    require 'supervisor.php';
+    require '../layouts/supervisor_layout.php';
     ?>
 
     <div class="clearfix"></div>

@@ -26,7 +26,7 @@ require '../sessions/admin_session.php';
 <div id="wrapper">
 
     <?php
-    require 'admin.php';
+    require '../layouts/admin_layout.php';
     ?>
 
     <div class="clearfix"></div>

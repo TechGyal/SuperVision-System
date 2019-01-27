@@ -25,7 +25,7 @@ require '../sessions/student_session.php';
 <div id="wrapper">
 
     <?php
-    require 'student.php';
+    require '../layouts/student_layout.php';
     ?>
 
     <div class="clearfix"></div>

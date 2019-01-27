@@ -6,7 +6,7 @@ $got_national_id = $got_email = $got_phone_number = '';
 
 //generate a random secret code btn 100000-50000
 try {
-    $secret_code = random_int(10000, 50000);
+	$secret_code = strtoupper(bin2hex(openssl_random_pseudo_bytes(5)));
 } catch (Exception $e) {
     return 504;
 }

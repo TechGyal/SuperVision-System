@@ -12,7 +12,7 @@ $ses_sql = mysqli_query($connection, "select * from supervisor_table where natio
 
 //fetch all admin details
 $row = mysqli_fetch_assoc($ses_sql);
-$id = $row['id'];
+$supervisor_id = $row['id'];
 $supervisor_name = $row['supervisor_name'];
 $email = $row['email'];
 $national_id = $row['national_id'];

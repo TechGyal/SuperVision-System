@@ -47,7 +47,7 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
 <div id="wrapper">
 
     <?php
-    require 'admin.php';
+    require '../layouts/admin_layout.php';
     ?>
 
     <div class="clearfix"></div>

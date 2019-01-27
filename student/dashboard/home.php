@@ -27,7 +27,7 @@ $students = $supervisors = $in_progress = $finished = 0;
 <div id="wrapper">
 
     <?php
-    require 'student.php';
+    require '../layouts/student_layout.php';
     ?>
 
     <div class="clearfix"></div>

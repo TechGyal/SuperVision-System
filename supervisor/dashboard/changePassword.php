@@ -26,7 +26,7 @@ require '../../functions/reset_password_function.php';
 <div id="wrapper">
 
     <?php
-    require 'supervisor.php';
+    require '../layouts/supervisor_layout.php';
     ?>
 
     <div class="clearfix"></div>
