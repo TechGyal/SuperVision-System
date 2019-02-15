@@ -6,11 +6,11 @@
 @import "../assets/css/icons.css";
 @import "../assets/css/app-style.css";
 @import "../assets/css/sidebar-menu.css";
-@import "../sweetalerts/sweetalert-dev.min.js";
-@import "../sweetalerts/sweetalert-dev.js";
-@import "../sweetalerts/sweetalert.min.js";
-@import "../sweetalerts/sweetalert.css";
-@import "../sweetalerts/sweetalert.min.css";
+@import "../assets/sweetalerts/sweetalert-dev.min.js";
+@import "../assets/sweetalerts/sweetalert-dev.js";
+@import "../assets/sweetalerts/sweetalert.min.js";
+@import "../assets/sweetalerts/sweetalert.css";
+@import "../assets/sweetalerts/sweetalert.min.css";
 @import "../assets/plugins/jquery.steps/css/jquery.steps.css";
 @import "../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css";
 @import "../assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css";

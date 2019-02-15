@@ -197,8 +197,8 @@ require '../sessions/admin_session.php';
 <!-- Index js -->
 <script src="../../assets/js/index.js"></script>
 
-<script src="../../sweetalerts/sweetalert-dev.min.js"></script>
-<script src="../../sweetalerts/sweetalert-dev.js"></script>
-<script src="../../sweetalerts/sweetalert.min.js"></script>
+<script src="../../assets/sweetalerts/sweetalert-dev.min.js"></script>
+<script src="../../assets/sweetalerts/sweetalert-dev.js"></script>
+<script src="../../assets/sweetalerts/sweetalert.min.js"></script>
 </body>
 </html>

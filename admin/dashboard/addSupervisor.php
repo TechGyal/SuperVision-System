@@ -146,9 +146,9 @@ require '../../functions/add_supervisor_function.php';
 <!-- Index js -->
 <script src="../../assets/js/index.js"></script>
 
-<script src="../../sweetalerts/sweetalert-dev.min.js"></script>
-<script src="../../sweetalerts/sweetalert-dev.js"></script>
-<script src="../../sweetalerts/sweetalert.min.js"></script>
+<script src="../../assets/sweetalerts/sweetalert-dev.min.js"></script>
+<script src="../../assets/sweetalerts/sweetalert-dev.js"></script>
+<script src="../../assets/sweetalerts/sweetalert.min.js"></script>
 <!--Form Wizard-->
 <script src="../../assets/plugins/jquery.steps/js/jquery.steps.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="../../assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>

@@ -12,7 +12,7 @@ $database_name = "attachment_system";//Here we give the name of our database we 
 
 
 /**
- * In this connection we try to connect the if it
+ * In this connection we try to connect then if it
  * fails we terminate by using die(connection)
  */
 $connection = mysqli_connect($host, $user, $password, $database_name) or die($connection);

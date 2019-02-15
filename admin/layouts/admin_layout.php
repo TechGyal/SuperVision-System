@@ -90,26 +90,44 @@ require '../../functions/fetch_notifications.php'
                    href="../mailbox/inbox.php">
                     <i class="icon-bell"></i><span
                             class="badge badge-primary badge-up"><?php echo number_format($unReadNotifications) ?></span></a>
-                <!--                <div class="dropdown-menu dropdown-menu-right">-->
-                <!--                    <ul class="list-group list-group-flush">-->
-                <!--                        <li class="list-group-item d-flex justify-content-between align-items-center">-->
-                <!--                            You have 10 Notifications-->
-                <!--                            <span class="badge badge-primary">10</span>-->
-                <!--                        </li>-->
-                <!--                        <li class="list-group-item">-->
-                <!--                            <a href="javaScript:void();">-->
-                <!--                                <div class="media">-->
-                <!--                                    <i class="icon-bell fa-2x mr-3 text-danger"></i>-->
-                <!--                                    <div class="media-body">-->
-                <!--                                        <h6 class="mt-0 msg-title">New Updates</h6>-->
-                <!--                                        <p class="msg-info">Lorem ipsum dolor sit amet...</p>-->
-                <!--                                    </div>-->
-                <!--                                </div>-->
-                <!--                            </a>-->
-                <!--                        </li>-->
-                <!--                        <li class="list-group-item"><a href="#">See All Notifications</a></li>-->
-                <!--                    </ul>-->
-                <!--                </div>-->
+                <div class="dropdown-menu dropdown-menu-right">
+                    <ul class="list-group list-group-flush">
+                        <?php
+                        $count = 0;
+                        if ($connection) {
+                            $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE admin_id='$admin_id' ORDER BY id DESC");
+                            if ($result == TRUE) {
+                                echo '
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            You have 10 Notifications
+                            <span class="badge badge-primary">10</span>
+                        </li>';
+                                while ($row = mysqli_fetch_array($result)) {
+                                    echo '
+                        <li class="list-group-item">
+                            <a href="../mailbox/read.php?action=read&id=' . $row["id"] . '">
+                                <div class="media">
+                                    <i class="icon-bell fa-2x mr-3 text-danger"></i>
+                                    <div class="media-body">
+                                        <h6 class="mt-0 msg-title">' . $row['subject'] . '</h6>
+                                        <p class="msg-info">' . $row['message'] . '</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>';
+                                }
+                                echo '
+                        <li class="list-group-item"><a href="../mailbox/inbox.php">See All Notifications</a></li>';
+                            } else {
+                                echo '  <li class="list-group-item d-flex justify-content-between align-items-center">
+                            You have ' . number_format($unReadNotifications) . ' Notifications
+                            <span class="badge badge-primary">' . number_format($unReadNotifications) . '</span>
+                        </li>';
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
             </li>
 
             <li class="nav-item language">
