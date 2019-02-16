@@ -83,7 +83,7 @@ require '../../functions/fetch_notifications.php'
                         <?php
                         $count = 0;
                         if ($connection) {
-                            $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE admin_id='$student_id' ORDER BY id DESC");
+                            $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE student_id='$student_id' ORDER BY id DESC");
                             if ($result == TRUE) {
                                 echo '
                         <li class="list-group-item d-flex justify-content-between align-items-center">
