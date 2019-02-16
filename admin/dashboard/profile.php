@@ -1,4 +1,3 @@
-
 <?php
 /**
  * have your all includes here
@@ -6,6 +5,7 @@
  */
 require '../../inc/appNames.php';
 require '../sessions/admin_session.php';
+require '../../functions/update_profile.php'
 ?>
 <!doctype html>
 <html lang="en">
@@ -45,8 +45,12 @@ require '../sessions/admin_session.php';
                 <div class="col-sm-3">
                     <a href="home.php">
                         <div class="btn-group float-sm-right">
-                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i class="fa fa-home mr-1"></i> Home</button>
-                            <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown">
+                            <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i
+                                        class="fa fa-home mr-1"></i> Home
+                            </button>
+                            <button type="button"
+                                    class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light"
+                                    data-toggle="dropdown">
                                 <span class="caret"></span>
                             </button>
                         </div>
@@ -67,7 +71,8 @@ require '../sessions/admin_session.php';
                             </div>
                             <div class="card-body text-center">
                                 <hr>
-                                <a href="../sessions/admin_logout.php" class="btn btn-danger shadow-danger btn-sm btn-round waves-effect waves-light m-1">Logout</a>
+                                <a href="../sessions/admin_logout.php"
+                                   class="btn btn-danger shadow-danger btn-sm btn-round waves-effect waves-light m-1">Logout</a>
                             </div>
                         </div>
                     </div>
@@ -77,10 +82,14 @@ require '../sessions/admin_session.php';
                         <div class="card-body">
                             <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
                                 <li class="nav-item">
-                                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Profile</span></a>
+                                    <a href="javascript:void();" data-target="#profile" data-toggle="pill"
+                                       class="nav-link active"><i class="icon-user"></i> <span
+                                                class="hidden-xs">Profile</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
+                                    <a href="javascript:void();" data-target="#edit" data-toggle="pill"
+                                       class="nav-link"><i class="icon-note"></i> <span
+                                                class="hidden-xs">Edit</span></a>
                                 </li>
                             </ul>
                             <div class="tab-content p-3">
@@ -115,35 +124,47 @@ require '../sessions/admin_session.php';
                                     <!--/row-->
                                 </div>
                                 <div class="tab-pane" id="edit">
-                                    <form>
+                                    <form method="post" action="">
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Full name</label>
+                                            <label for="name" class="col-lg-3 col-form-label form-control-label">Full
+                                                name</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text" value='<?php echo $admin_name ?>'>
+                                                <input class="form-control" name="name" id="name" type="text"
+                                                       value='<?php echo $admin_name ?>' disabled>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Email Address</label>
+                                            <label class="col-lg-3 col-form-label form-control-label">National
+                                                ID</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text" value='<?php echo $admin_email ?>'>
+                                                <input class="form-control" type="text" disabled
+                                                       value='<?php echo $national_id ?>'>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">National ID</label>
+                                            <label for="name" class="col-lg-3 col-form-label form-control-label">Email
+                                                Address</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text" value='<?php echo $national_id ?>'>
+                                                <input class="form-control" type="email" name="email" id="name"
+                                                       value='<?php echo $admin_email ?>'>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Phone Number</label>
+                                            <label for="phone_number"
+                                                   class="col-lg-3 col-form-label form-control-label">Phone
+                                                Number</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text" value='<?php echo $phone_number ?>'>
+                                                <input class="form-control" type="text" name="phone_number"
+                                                       id="phone_number"
+                                                       value='<?php echo $phone_number ?>'>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 col-form-label form-control-label"></label>
                                             <div class="col-lg-9">
-                                                <input type="submit" class="btn btn-primary pull-right" value="Save Changes">
+                                                <input type="submit" class="btn btn-primary pull-right"
+                                                       name="update_admin"
+                                                       value="Save Changes">
                                             </div>
                                         </div>
                                     </form>
