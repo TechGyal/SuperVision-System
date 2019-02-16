@@ -5,6 +5,7 @@
  */
 require '../../inc/appNames.php';
 require '../sessions/supervisor_session.php';
+require '../../functions/update_profile.php'
 ?>
 <!doctype html>
 <html lang="en">
@@ -123,34 +124,39 @@ require '../sessions/supervisor_session.php';
                                     <!--/row-->
                                 </div>
                                 <div class="tab-pane" id="edit">
-                                    <form>
+                                    <form action="" method="post">
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Full name</label>
+                                            <label for="name" class="col-lg-3 col-form-label form-control-label">Full
+                                                name</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text"
+                                                <input class="form-control" type="text" disabled name="name" id="name"
                                                        value='<?php echo $supervisor_name ?>'>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Email
-                                                Address</label>
-                                            <div class="col-lg-9">
-                                                <input class="form-control" type="text" value='<?php echo $email ?>'>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">National
+                                            <label for="national_id" class="col-lg-3 col-form-label form-control-label">National
                                                 ID</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text"
+                                                <input class="form-control" type="text" disabled name="national_id"
+                                                       id="national_id"
                                                        value='<?php echo $national_id ?>'>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-3 col-form-label form-control-label">Phone
+                                            <label for="email" class="col-lg-3 col-form-label form-control-label">Email
+                                                Address</label>
+                                            <div class="col-lg-9">
+                                                <input class="form-control" type="email" name="email" id="email"
+                                                       value='<?php echo $email ?>'>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone_number"
+                                                   class="col-lg-3 col-form-label form-control-label">Phone
                                                 Number</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="text"
+                                                <input class="form-control" type="text" name="phone_number"
+                                                       id="phone_number"
                                                        value='<?php echo $phone_number ?>'>
                                             </div>
                                         </div>
@@ -158,6 +164,7 @@ require '../sessions/supervisor_session.php';
                                             <label class="col-lg-3 col-form-label form-control-label"></label>
                                             <div class="col-lg-9">
                                                 <input type="submit" class="btn btn-primary pull-right"
+                                                       name="supervisor_update"
                                                        value="Save Changes">
                                             </div>
                                         </div>
