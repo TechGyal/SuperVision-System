@@ -199,7 +199,7 @@ require '../../functions/update_profile.php'
                                             <label for="email" class="col-lg-3 col-form-label form-control-label">Email
                                                 Address</label>
                                             <div class="col-lg-9">
-                                                <input class="form-control" type="email" id="email"
+                                                <input class="form-control" type="email" id="email" name="email" required
                                                        value='<?php echo $email ?>'>
                                             </div>
                                         </div>
