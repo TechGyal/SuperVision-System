@@ -44,7 +44,7 @@ $students = $supervisors = $in_progress = $finished = 0;
                             <div class="media">
                                 <div class="media-body text-left">
                                     <h4 class="text-info"><?php echo number_format($finished)?></h4>
-                                    <span>Cleared</span>
+                                    <span>Completed Assignments</span>
                                 </div>
                                 <div class="align-self-center w-circle-icon rounded-circle gradient-scooter">
                                     <i class="fa fa-bar-chart-o text-white"></i></div>

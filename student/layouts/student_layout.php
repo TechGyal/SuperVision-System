@@ -30,12 +30,12 @@ require '../../functions/fetch_notifications.php'
         </li>
         <li>
             <a href="javaScript:void();" class="waves-effect">
-                <i class="fa fa-graduation-cap"></i>
-                <span>Student</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-laptop"></i>
+                <span>Hub</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="sidebar-submenu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Assign Task</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> View Progress</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> New Skill</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> View Skill</a></li>
             </ul>
         </li>
 
