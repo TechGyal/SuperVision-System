@@ -45,7 +45,7 @@ require '../sessions/admin_session.php';
                     <a href="home.php">
                         <div class="btn-group float-sm-right">
                             <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i
-                                    class="fa fa-home mr-1"></i> Home
+                                        class="fa fa-home mr-1"></i> Home
                             </button>
                             <button type="button"
                                     class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light"
@@ -79,15 +79,21 @@ require '../sessions/admin_session.php';
                                         <th>Email</th>
                                         <th>Phone Number</th>
                                         <th>Secret Code</th>
+                                        <th>Completed</th>
                                         <th>Created At</th>
                                     </tr>
                                     </thead>';
                                 echo '<tbody>';
                                 // keeps getting the next row until there are no more to get
                                 while ($row = mysqli_fetch_array($result)) {
+                                    $student_id = $row['id'];
+                                    //check student cleared attachment
+                                    $sql = mysqli_query($connection, "SELECT * FROM attachment_table WHERE id='$student_id'");
+                                    $rowThree = mysqli_fetch_assoc($sql);
+
                                     // Print out the contents of each row into a table
                                     echo "<tr><td>";
-                                    echo 'AS/'.$row['id'].'/'.date('Y');
+                                    echo 'AS/' . $row['id'] . '/' . date('Y');
                                     echo "</td><td>";
                                     echo $row['student_name'];
                                     echo "</td><td>";
@@ -98,6 +104,15 @@ require '../sessions/admin_session.php';
                                     echo $row['phone_number'];
                                     echo "</td><td>";
                                     echo $row['secret_code'];
+                                    echo "</td><td>";
+
+                                    $end_date = $rowThree['end_date'];
+                                    if (strtotime($end_date) < date('Y-m-d')) {
+                                       echo '<button class="btn btn-success" disabled>Completed</button>';
+                                    } else {
+                                        echo '<button class="btn btn-danger" disabled>In Progress...</button>';
+                                    }
+
                                     echo "</td><td>";
                                     echo date('F d, Y h:i a', strtotime($row['created_at']));
                                     echo "</td></tr>";
@@ -111,6 +126,7 @@ require '../sessions/admin_session.php';
                                         <th>Email</th>
                                         <th>Phone Number</th>
                                         <th>Secret Code</th>
+                                        <th>Completed</th>
                                         <th>Created At</th>
                                     </tr>
                                     </tfoot>

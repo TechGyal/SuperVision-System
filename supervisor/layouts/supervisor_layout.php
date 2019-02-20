@@ -91,7 +91,9 @@ require '../../functions/fetch_notifications.php'
                             <span class="badge badge-primary">10</span>
                         </li>';
                                 while ($row = mysqli_fetch_array($result)) {
-                                    echo '
+                                    $count++;
+                                    if ($count <= 5) {
+                                        echo '
                         <li class="list-group-item">
                             <a href="../mailbox/read.php?action=read&id=' . $row["id"] . '">
                                 <div class="media">
@@ -103,6 +105,7 @@ require '../../functions/fetch_notifications.php'
                                 </div>
                             </a>
                         </li>';
+                                    }
                                 }
                                 echo '
                         <li class="list-group-item"><a href="../mailbox/inbox.php">See All Notifications</a></li>';

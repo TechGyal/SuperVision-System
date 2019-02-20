@@ -79,6 +79,7 @@ require '../sessions/admin_session.php';
                                         <th>Email</th>
                                         <th>Phone Number</th>
                                         <th>Secret Code</th>
+                                        <th>Action</th>
                                         <th>Created At</th>
                                     </tr>
                                     </thead>';
@@ -87,7 +88,7 @@ require '../sessions/admin_session.php';
                                 while ($row = mysqli_fetch_array($result)) {
                                     // Print out the contents of each row into a table
                                     echo "<tr><td>";
-                                    echo 'AS/'.$row['id'].'/'.date('Y');
+                                    echo 'AS/' . $row['id'] . '/' . date('Y');
                                     echo "</td><td>";
                                     echo $row['supervisor_name'];
                                     echo "</td><td>";
@@ -99,11 +100,13 @@ require '../sessions/admin_session.php';
                                     echo "</td><td>";
                                     echo $row['secret_code'];
                                     echo "</td><td>";
+                                    echo '<a href="../../functions/delete_supervisor.php?action=read&id=' . $row["id"] . '" class="btn btn-danger btn-md"><span class="fa fa-trash"></span></a>';
+                                    echo "</td><td>";
                                     echo date('F d, Y h:i a', strtotime($row['created_at']));
                                     echo "</td></tr>";
                                 }
-                                  echo '</tbody>';
-                                   echo '<tfoot>
+                                echo '</tbody>';
+                                echo '<tfoot>
                                     <tr>
                                         <th>#</th>
                                         <th>Supervisor Name</th>
@@ -111,6 +114,7 @@ require '../sessions/admin_session.php';
                                         <th>Email</th>
                                         <th>Phone Number</th>
                                         <th>Secret Code</th>
+                                        <th>Action</th>
                                         <th>Created At</th>
                                     </tr>
                                     </tfoot>

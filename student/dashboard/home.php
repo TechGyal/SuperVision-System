@@ -6,7 +6,22 @@
 require '../../inc/appNames.php';
 require '../sessions/student_session.php';
 
-$students = $supervisors = $in_progress = $finished = 0;
+$done = $new = $hub = 0;
+
+$sqlOne = mysqli_query($connection, "SELECT * FROM assignment_table WHERE student_id='$student_id' AND status=TRUE ");
+$sqlTwo = mysqli_query($connection, "SELECT * FROM assignment_table WHERE student_id='$student_id' AND status=FALSE ");
+$sqlThree = mysqli_query($connection, "SELECT * FROM hub_table WHERE student_id='$student_id'");
+
+while ($rowOne = mysqli_fetch_array($sqlOne)) {
+    $done++;
+}
+while ($rowTwo = mysqli_fetch_array($sqlTwo)) {
+    $new++;
+}
+
+while ($rowThree = mysqli_fetch_array($sqlThree)) {
+    $hub++;
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,8 +58,8 @@ $students = $supervisors = $in_progress = $finished = 0;
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body text-left">
-                                    <h4 class="text-info"><?php echo number_format($finished)?></h4>
-                                    <span>Completed Assignments</span>
+                                    <h4 class="text-info"><?php echo number_format($done) ?></h4>
+                                    <span>Done Assignments</span>
                                 </div>
                                 <div class="align-self-center w-circle-icon rounded-circle gradient-scooter">
                                     <i class="fa fa-bar-chart-o text-white"></i></div>
@@ -57,7 +72,7 @@ $students = $supervisors = $in_progress = $finished = 0;
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body text-left">
-                                    <h4 class="text-danger"><?php echo number_format($in_progress) ?></h4>
+                                    <h4 class="text-danger"><?php echo number_format($new) ?></h4>
                                     <span>New Assignments</span>
                                 </div>
                                 <div class="align-self-center w-circle-icon rounded-circle gradient-bloody">
@@ -71,7 +86,7 @@ $students = $supervisors = $in_progress = $finished = 0;
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body text-left">
-                                    <h4 class="text-success"><?php echo number_format($students) ?></h4>
+                                    <h4 class="text-success"><?php echo number_format($hub) ?></h4>
                                     <span>Hub</span>
                                 </div>
                                 <div class="align-self-center w-circle-icon rounded-circle gradient-quepal">
@@ -85,7 +100,7 @@ $students = $supervisors = $in_progress = $finished = 0;
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body text-left">
-                                    <h4 class="text-warning"><?php echo number_format($supervisors) ?></h4>
+                                    <h4 class="text-warning"><?php echo number_format($done + $hub) ?></h4>
                                     <span>My Skills</span>
                                 </div>
                                 <div class="align-self-center w-circle-icon rounded-circle gradient-blooker">

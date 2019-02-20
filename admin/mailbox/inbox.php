@@ -122,7 +122,7 @@ require '../sessions/admin_session.php';
                 class="fa fa-circle text-info mr-1"></i>' . $row['message'] . '</a>
     </td>';
                                                         echo ' <td class="text-right">
-       ' . date('H:i a', strtotime($row['created_at'])) . '
+       ' . date('F d, Y H:i a', strtotime($row['created_at'])) . '
     </td>';
 
                                                         echo '</tr>';
