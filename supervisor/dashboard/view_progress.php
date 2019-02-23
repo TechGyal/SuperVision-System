@@ -5,12 +5,11 @@
  */
 require '../../inc/appNames.php';
 require '../sessions/supervisor_session.php';
-require '../../functions/search_progress.php';
 ?>
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php echo $appName ?> - <?php echo $student_name ?> Learning Hub</title>
+    <title><?php echo $appName ?> - <?php echo $_SESSION['student_name'] ?> Learning Hub</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -36,7 +35,7 @@ require '../../functions/search_progress.php';
             <!-- Breadcrumb-->
             <div class="row pt-2 pb-2">
                 <div class="col-sm-9">
-                    <h4 class="page-title"><?php echo $student_name ?> Skills Hub</h4>
+                    <h4 class="page-title"><?php echo $_SESSION['student_name'] ?> Skills Hub</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="changePassword.php"><?php echo $supervisor_name ?></a></li>
                         <li class="breadcrumb-item active" aria-current="page">View Skills Learned</li>
@@ -63,6 +62,7 @@ require '../../functions/search_progress.php';
                 <div class="col-lg-12">
                     <div class="card">
                         <?php
+                        $student_id = $_SESSION['student_id'];
                         //connect to the database mysql
                         //check for connection failures
                         if ($connection) {
@@ -103,7 +103,7 @@ require '../../functions/search_progress.php';
                             </div>';
                                 echo '</div>';
                             } else {
-                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet ' . $student_name . '.</h2></center>';
+                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet ' . $_SESSION['student_name'] . '.</h2></center>';
                             }
                         }
                         ?>
