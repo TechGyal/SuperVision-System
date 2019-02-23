@@ -9,7 +9,7 @@ require '../sessions/admin_session.php';
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php echo $appName ?>::Supervisor Details</title>
+    <title><?php echo $appName ?> - Supervisor Details</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -66,7 +66,7 @@ require '../sessions/admin_session.php';
                         //check for connection failures
                         if ($connection) {
                             $result = mysqli_query($connection, "SELECT * FROM supervisor_table ORDER BY id DESC ");
-                            if ($result == TRUE) {
+                            if (mysqli_num_rows($result) > 0) {
                                 echo '<div class="card-header"><i class="fa fa-table"></i> Supervisors Details</div>';
                                 echo '<div class="card-body">';
                                 echo '<div class="table-responsive">
@@ -122,7 +122,7 @@ require '../sessions/admin_session.php';
                             </div>';
                                 echo '</div>';
                             } else {
-
+                                echo '<center><h2 class="text-danger text-uppercase">No Supervisors Were Found.</h2></center>';
                             }
                         }
                         ?>

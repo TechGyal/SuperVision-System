@@ -97,7 +97,7 @@ require '../sessions/supervisor_session.php';
                                             <?php
                                             if ($connection) {
                                                 $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE supervisor_id='$supervisor_id' ORDER BY id DESC");
-                                                if ($result == TRUE) {
+                                                if (mysqli_num_rows($result) > 0) {
                                                     echo ' <div class="table-responsive">';
                                                     echo ' <table class="table table-hover">';
                                                     echo ' <tbody>';

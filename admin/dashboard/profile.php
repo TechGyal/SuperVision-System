@@ -10,7 +10,7 @@ require '../../functions/update_profile.php'
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php echo $appName ?>::Profile</title>
+    <title><?php echo $appName ?> - Profile</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">

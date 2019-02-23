@@ -82,7 +82,7 @@ require '../sessions/admin_session.php';
 
                                         <div class="col-lg-4">
                                             <div class="position-relative has-icon-right">
-                                                <input type="text" class="form-control" placeholder="search mail">
+                                                <input type="text" class="form-control tableInput" placeholder="search mail" onkeyup="myFunction()">
                                                 <div class="form-control-position">
                                                     <i class="fa fa-search text-info"></i>
                                                 </div>
@@ -97,9 +97,9 @@ require '../sessions/admin_session.php';
                                             <?php
                                             if ($connection) {
                                                 $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE admin_id='$admin_id' ORDER BY id DESC");
-                                                if ($result == TRUE) {
+                                                if (mysqli_num_rows($result) > 0) {
                                                     echo ' <div class="table-responsive">';
-                                                    echo ' <table class="table table-hover">';
+                                                    echo ' <table class="table table-hover mailbox">';
                                                     echo ' <tbody>';
 
                                                     while ($row = mysqli_fetch_array($result)) {
@@ -206,6 +206,18 @@ require '../sessions/admin_session.php';
             .appendTo('#example_wrapper .col-md-6:eq(0)');
 
     });
+
+    function myFunction() {
+        $(document).ready(function () {
+            $(".tableInput").on("keyup", function () {
+                let value = $(this).val().toLowerCase();
+                $(".mailbox  tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    }
+
 
 </script>
 </body>

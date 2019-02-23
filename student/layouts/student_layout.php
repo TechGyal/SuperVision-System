@@ -30,11 +30,20 @@ require '../../functions/fetch_notifications.php'
         </li>
         <li>
             <a href="javaScript:void();" class="waves-effect">
+                <i class="fa fa-pencil-square"></i>
+                <span>My Tasks</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="sidebar-submenu">
+                <li><a href="../dashboard/view_tasks.php"><i class="fa fa-circle-o"></i> Assigned Tasks</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javaScript:void();" class="waves-effect">
                 <i class="fa fa-laptop"></i>
                 <span>Hub</span> <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="sidebar-submenu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> New Skill</a></li>
+                <li><a href="../dashboard/new_skill.php"><i class="fa fa-circle-o"></i> New Skill</a></li>
                 <li><a href="../dashboard/hub.php"><i class="fa fa-circle-o"></i> View Skill</a></li>
             </ul>
         </li>
@@ -64,12 +73,12 @@ require '../../functions/fetch_notifications.php'
                     <i class="icon-menu menu-icon"></i>
                 </a>
             </li>
-            <li class="nav-item">
-                <form class="search-bar">
-                    <input type="text" class="form-control" placeholder="Enter keywords">
-                    <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-                </form>
-            </li>
+            <!--            <li class="nav-item">-->
+            <!--                <form class="search-bar">-->
+            <!--                    <input type="text" class="form-control" placeholder="Enter keywords">-->
+            <!--                    <a href="javascript:void();"><i class="icon-magnifier"></i></a>-->
+            <!--                </form>-->
+            <!--            </li>-->
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
@@ -83,12 +92,12 @@ require '../../functions/fetch_notifications.php'
                         <?php
                         $count = 0;
                         if ($connection) {
-                            $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE student_id='$student_id' ORDER BY id DESC");
+                            $result = mysqli_query($connection, "SELECT * FROM notification_table WHERE student_id='$student_id' AND status=FALSE ORDER BY id DESC");
                             if ($result == TRUE) {
                                 echo '
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            You have 10 Notifications
-                            <span class="badge badge-primary">10</span>
+                            You have ' . number_format($unReadNotifications) . ' Notifications
+                            <span class="badge badge-primary">' . number_format($unReadNotifications) . '</span>
                         </li>';
                                 while ($row = mysqli_fetch_array($result)) {
                                     $count++;
@@ -100,7 +109,7 @@ require '../../functions/fetch_notifications.php'
                                     <i class="icon-bell fa-2x mr-3 text-danger"></i>
                                     <div class="media-body">
                                         <h6 class="mt-0 msg-title">' . $row['subject'] . '</h6>
-                                        <p class="msg-info">' . $row['message'] . '</p>
+                                        <p class="msg-info">' . mb_substr($row['message'], 0, 25, 'utf8') . '...' . '</p>
                                     </div>
                                 </div>
                             </a>

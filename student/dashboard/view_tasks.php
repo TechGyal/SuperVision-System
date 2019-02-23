@@ -9,7 +9,7 @@ require '../sessions/student_session.php';
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?php echo $appName ?> - <?php echo $student_name ?> Learning Hub</title>
+    <title><?php echo $appName ?> - My Assigned Tasks</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -35,10 +35,10 @@ require '../sessions/student_session.php';
             <!-- Breadcrumb-->
             <div class="row pt-2 pb-2">
                 <div class="col-sm-9">
-                    <h4 class="page-title">Skills Hub</h4>
+                    <h4 class="page-title">Tasks</h4>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="changePassword.php"><?php echo $student_name ?></a></li>
-                        <li class="breadcrumb-item active" aria-current="page">View Skills Learned</li>
+                        <li class="breadcrumb-item active" aria-current="page">View Tasks</li>
                     </ol>
                 </div>
                 <div class="col-sm-3">
@@ -65,7 +65,7 @@ require '../sessions/student_session.php';
                         //connect to the database mysql
                         //check for connection failures
                         if ($connection) {
-                            $result = mysqli_query($connection, "SELECT * FROM hub_table WHERE student_id='$student_id' ORDER BY id DESC ");
+                            $result = mysqli_query($connection, "SELECT * FROM task_table WHERE student_id='$student_id' ORDER BY id DESC ");
                             if (mysqli_num_rows($result) > 0) {
                                 echo '<div class="card-header"><i class="fa fa-table"></i> Task Details</div>';
                                 echo '<div class="card-body">';
@@ -74,27 +74,36 @@ require '../sessions/student_session.php';
                                     <thead>
                                     <tr>
                                       <th>NO</th>
-                                    <th>Skill</th>
-                                    <th>Skill Description</th>
+                                    <th>Supervisor Name</th>
+                                    <th>Task Type</th>
+                                    <th>Task Description</th>
+                                    <th>Action</th>
                                     <th>Date/Time</th>
                                     </tr>
                                     </thead>';
                                 echo '<tbody>';
                                 // keeps getting the next row until there are no more to get
                                 while ($row = mysqli_fetch_array($result)) {
+                                    $supervisor_id = $row['supervisor_id'];
+                                    $sql = mysqli_query($connection, "SELECT * FROM supervisor_table WHERE id='$supervisor_id'");
+                                    $rowThree = mysqli_fetch_assoc($sql);
                                     echo '<tr>
                                                   <td><strong class="text-primary">AS/' . $row['id'] . '</strong></td>
-                                                  <td>' . $row['learn'] . '</td>
-                                                  <td>' . $row['skill'] . '</td>
+                                                  <td>' . $rowThree['supervisor_name'] . '</td>
+                                                  <td>' . $row['task_type'] . '</td>
+                                                  <td>' . mb_substr($row['task_description'], 0, 300, 'utf8') . '...' . '</td>
+                                                  <td><a href="read_task.php?action=read&id=' . $row["id"] . '" class="btn btn-primary">Read More...</a></td>
                                                   <td>' . date('F d, Y h:i a', strtotime($row['created_at'])) . '</td>
                                                   </tr>';
                                 }
                                 echo '</tbody>';
                                 echo '<tfoot>
                                     <tr>
-                                     <th>NO</th>
-                                    <th>Skill</th>
-                                    <th>Skill Description</th>
+                                       <th>NO</th>
+                                    <th>Supervisor Name</th>
+                                    <th>Task Type</th>
+                                    <th>Task Description</th>
+                                    <th>Action</th>
                                     <th>Date/Time</th>
                                     </tr>
                                     </tfoot>
@@ -102,7 +111,7 @@ require '../sessions/student_session.php';
                             </div>';
                                 echo '</div>';
                             } else {
-                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet.</h2></center>';
+                                echo '<center><h2 class="text-danger text-uppercase">No Tasks Assigned To You Yet.</h2></center>';
                             }
                         }
                         ?>

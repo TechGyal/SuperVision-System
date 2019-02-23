@@ -66,7 +66,7 @@ require '../sessions/admin_session.php';
                         //check for connection failures
                         if ($connection) {
                             $result = mysqli_query($connection, "SELECT * FROM student_table ORDER BY id DESC ");
-                            if ($result == TRUE) {
+                            if (mysqli_num_rows($result) > 0) {
                                 echo '<div class="card-header"><i class="fa fa-table"></i> Student Details</div>';
                                 echo '<div class="card-body">';
                                 echo '<div class="table-responsive">
@@ -108,7 +108,7 @@ require '../sessions/admin_session.php';
 
                                     $end_date = $rowThree['end_date'];
                                     if (strtotime($end_date) < date('Y-m-d')) {
-                                       echo '<button class="btn btn-success" disabled>Completed</button>';
+                                        echo '<button class="btn btn-success" disabled>Completed</button>';
                                     } else {
                                         echo '<button class="btn btn-danger" disabled>In Progress...</button>';
                                     }
@@ -134,7 +134,7 @@ require '../sessions/admin_session.php';
                             </div>';
                                 echo '</div>';
                             } else {
-
+                                echo '<center><h2 class="text-danger text-uppercase">No Students Were Found.</h2></center>';
                             }
                         }
                         ?>

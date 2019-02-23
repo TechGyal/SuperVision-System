@@ -4,7 +4,8 @@
  * that's all the files you want to use here
  */
 require '../../inc/appNames.php';
-require '../sessions/student_session.php';
+require '../sessions/admin_session.php';
+include '../../functions/search_progress.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,7 +26,7 @@ require '../sessions/student_session.php';
 <div id="wrapper">
 
     <?php
-    require '../layouts/student_layout.php';
+    require '../layouts/admin_layout.php';
     ?>
 
     <div class="clearfix"></div>
@@ -35,9 +36,9 @@ require '../sessions/student_session.php';
             <!-- Breadcrumb-->
             <div class="row pt-2 pb-2">
                 <div class="col-sm-9">
-                    <h4 class="page-title">Skills Hub</h4>
+                    <h4 class="page-title"><?php echo $student_name ?> Skills Hub</h4>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="changePassword.php"><?php echo $student_name ?></a></li>
+                        <li class="breadcrumb-item"><a href="changePassword.php"><?php echo $admin_name ?></a></li>
                         <li class="breadcrumb-item active" aria-current="page">View Skills Learned</li>
                     </ol>
                 </div>
@@ -102,7 +103,7 @@ require '../sessions/student_session.php';
                             </div>';
                                 echo '</div>';
                             } else {
-                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet.</h2></center>';
+                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet ' . $student_name . '.</h2></center>';
                             }
                         }
                         ?>
