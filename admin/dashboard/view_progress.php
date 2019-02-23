@@ -5,7 +5,7 @@
  */
 require '../../inc/appNames.php';
 require '../sessions/admin_session.php';
-include '../../functions/search_progress.php';
+require '../../functions/search_progress.php';
 ?>
 <!doctype html>
 <html lang="en">

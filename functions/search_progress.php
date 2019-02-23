@@ -30,6 +30,8 @@ if (isset($_POST['admin_search_student'])) {
 
     }
 }
+
+
 if (isset($_POST['supervisor_search_student'])) {
     $detail = mysqli_real_escape_string($connection, $_POST['detail']);
 

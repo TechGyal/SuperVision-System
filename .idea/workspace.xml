@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9065ff-ec0b-4f34-b02c-a082802afdd1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/dashboard/search_progress.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/dashboard/view_progress.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/assign_task.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/process_new_skill.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/read_task.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/search_progress.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/student/dashboard/new_skill.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/student/dashboard/read_task.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/student/dashboard/view_tasks.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/supervisor/dashboard/assign_task.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/supervisor/dashboard/search_progress.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/supervisor/dashboard/view_assigned.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DBConnection/Connection.php" afterPath="$PROJECT_DIR$/DBConnection/Connection.php" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard/home.php" afterPath="$PROJECT_DIR$/admin/dashboard/home.php" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard/profile.php" afterPath="$PROJECT_DIR$/admin/dashboard/profile.php" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard/viewStudent.php" afterPath="$PROJECT_DIR$/admin/dashboard/viewStudent.php" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard/viewSupervisor.php" afterPath="$PROJECT_DIR$/admin/dashboard/viewSupervisor.php" />
-      <change beforePath="$PROJECT_DIR$/admin/layouts/admin_layout.php" afterPath="$PROJECT_DIR$/admin/layouts/admin_layout.php" />
-      <change beforePath="$PROJECT_DIR$/admin/mailbox/inbox.php" afterPath="$PROJECT_DIR$/admin/mailbox/inbox.php" />
-      <change beforePath="$PROJECT_DIR$/functions/add_student_function.php" afterPath="$PROJECT_DIR$/functions/add_student_function.php" />
-      <change beforePath="$PROJECT_DIR$/student/dashboard/home.php" afterPath="$PROJECT_DIR$/student/dashboard/home.php" />
-      <change beforePath="$PROJECT_DIR$/student/dashboard/hub.php" afterPath="$PROJECT_DIR$/student/dashboard/hub.php" />
-      <change beforePath="$PROJECT_DIR$/student/layouts/student_layout.php" afterPath="$PROJECT_DIR$/student/layouts/student_layout.php" />
-      <change beforePath="$PROJECT_DIR$/student/mailbox/inbox.php" afterPath="$PROJECT_DIR$/student/mailbox/inbox.php" />
-      <change beforePath="$PROJECT_DIR$/supervisor/dashboard/home.php" afterPath="$PROJECT_DIR$/supervisor/dashboard/home.php" />
-      <change beforePath="$PROJECT_DIR$/supervisor/layouts/supervisor_layout.php" afterPath="$PROJECT_DIR$/supervisor/layouts/supervisor_layout.php" />
-      <change beforePath="$PROJECT_DIR$/supervisor/mailbox/inbox.php" afterPath="$PROJECT_DIR$/supervisor/mailbox/inbox.php" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard/view_progress.php" afterPath="$PROJECT_DIR$/admin/dashboard/view_progress.php" />
+      <change beforePath="$PROJECT_DIR$/functions/search_progress.php" afterPath="$PROJECT_DIR$/functions/search_progress.php" />
+      <change beforePath="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" afterPath="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,6 +14,18 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="AS" />
@@ -47,17 +35,17 @@
       <file leaf-file-name="view_progress.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/dashboard/view_progress.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="144">
+              <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
               <folding>
-                <marker date="1550936796122" expanded="true" signature="2693:2764" ph="SELECT * FRO... hub_table" />
-                <marker date="1550936796122" expanded="true" signature="3076:3549" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="3158:3549" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="3202:3549" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="3243:3504" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="3816:4272" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="4403:4749" ph="..." />
-                <marker date="1550936796122" expanded="true" signature="4444:4704" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="2693:2764" ph="SELECT * FRO... hub_table" />
+                <marker date="1550938081744" expanded="true" signature="3076:3549" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="3158:3549" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="3202:3549" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="3243:3504" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="3816:4272" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="4403:4749" ph="..." />
+                <marker date="1550938081744" expanded="true" signature="4444:4704" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,24 +54,44 @@
       <file leaf-file-name="search_progress.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions/search_progress.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="160">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding>
                 <element signature="e#6#115#0#PHP" expanded="true" />
-                <marker date="1550936795990" expanded="true" signature="350:450" ph="SELECT * FRO... student_table" />
-                <marker date="1550936795990" expanded="true" signature="1308:1364" ph="SELECT * FRO... task_table" />
-                <marker date="1550936795990" expanded="true" signature="1308:1389" ph="SELECT * FRO... task_table" />
-                <marker date="1550936795990" expanded="true" signature="1308:1408" ph="SELECT * FRO... task_table" />
+                <marker date="1550938081650" expanded="true" signature="350:450" ph="SELECT * FRO... student_table" />
+                <marker date="1550938081650" expanded="true" signature="1310:1366" ph="SELECT * FRO... task_table" />
+                <marker date="1550938081650" expanded="true" signature="1310:1391" ph="SELECT * FRO... task_table" />
+                <marker date="1550938081650" expanded="true" signature="1310:1410" ph="SELECT * FRO... task_table" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_progress.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view_progress.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/supervisor/dashboard/view_progress.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding>
+                <marker date="1550938081838" expanded="true" signature="2708:2750" ph="SELECT * FRO... hub_table" />
+                <marker date="1550938081838" expanded="true" signature="2708:2779" ph="SELECT * FRO... hub_table" />
+                <marker date="1550938081838" expanded="true" signature="3091:3564" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="3173:3564" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="3217:3564" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="3258:3519" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="3831:4287" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="4418:4764" ph="..." />
+                <marker date="1550938081838" expanded="true" signature="4459:4719" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_progress.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/dashboard/search_progress.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+            <state relative-caret-position="320">
+              <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -169,12 +177,12 @@
         <option value="$PROJECT_DIR$/student/dashboard/hub.php" />
         <option value="$PROJECT_DIR$/supervisor/layouts/supervisor_layout.php" />
         <option value="$PROJECT_DIR$/supervisor/dashboard/search_progress.php" />
-        <option value="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" />
         <option value="$PROJECT_DIR$/supervisor/dashboard/home.php" />
         <option value="$PROJECT_DIR$/admin/dashboard/home.php" />
+        <option value="$PROJECT_DIR$/admin/dashboard/search_progress.php" />
         <option value="$PROJECT_DIR$/admin/dashboard/view_progress.php" />
         <option value="$PROJECT_DIR$/functions/search_progress.php" />
-        <option value="$PROJECT_DIR$/admin/dashboard/search_progress.php" />
+        <option value="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" />
       </list>
     </option>
   </component>
@@ -226,22 +234,6 @@
             <path>
               <item name="AS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="AS" type="b2602c69:ProjectViewProjectNode" />
@@ -335,7 +327,7 @@
       <workItem from="1550238847207" duration="6529000" />
       <workItem from="1550349249705" duration="6542000" />
       <workItem from="1550678313804" duration="13169000" />
-      <workItem from="1550901077451" duration="22588000" />
+      <workItem from="1550901077451" duration="23843000" />
     </task>
     <task id="LOCAL-00001" summary="Accommodated changes.">
       <created>1548609641620</created>
@@ -393,11 +385,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550693418705</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New functions added.">
+      <created>1550936852700</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550936852700</updated>
+    </task>
+    <task id="LOCAL-00010" summary="New database.">
+      <created>1550937058411</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550937058411</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142360000" />
+    <option name="totallyTimeSpent" value="143615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +450,9 @@
     <MESSAGE value="Student profile update." />
     <MESSAGE value="Student update." />
     <MESSAGE value="Changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes." />
+    <MESSAGE value="New functions added." />
+    <MESSAGE value="New database." />
+    <option name="LAST_COMMIT_MESSAGE" value="New database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -453,17 +461,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions/insert.tests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#160#0#PHP" expanded="false" />
-            <marker date="1548335542181" expanded="true" signature="650:855" ph="INSERT INTO admin_table... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/fetch_notifications.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -608,7 +605,7 @@
         <state relative-caret-position="352">
           <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
           <folding>
-            <element signature="e#6#146#0#PHP" expanded="true" />
+            <element signature="e#6#146#0#PHP" expanded="false" />
             <marker date="1550350881024" expanded="true" signature="497:548" ph="update admin_table... " />
             <marker date="1550350881024" expanded="true" signature="497:584" ph="update admin_table... " />
             <marker date="1550350881024" expanded="true" signature="1378:1475" ph="update supervisor_table... " />
@@ -851,7 +848,7 @@
         <state relative-caret-position="96">
           <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
-            <element signature="e#6#78#0#PHP" expanded="true" />
+            <element signature="e#6#78#0#PHP" expanded="false" />
             <marker date="1550909935418" expanded="true" signature="916:1083" ph="INSERT INTO student_table... " />
             <marker date="1550909935418" expanded="true" signature="1240:1290" ph="SELECT * FRO... student_table" />
             <marker date="1550909935418" expanded="true" signature="1456:1616" ph="INSERT INTO notification_table... " />
@@ -918,7 +915,7 @@
         <state relative-caret-position="208">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#6#72#0#PHP" expanded="true" />
+            <element signature="e#6#72#0#PHP" expanded="false" />
             <marker date="1550929149663" expanded="true" signature="164:208" ph="SELECT * FRO... task_table" />
             <marker date="1550929149663" expanded="true" signature="449:499" ph="update task_table... " />
           </folding>
@@ -996,42 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supervisor/dashboard/view_progress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <marker date="1550935754082" expanded="true" signature="2708:2750" ph="SELECT * FRO... hub_table" />
-            <marker date="1550935754082" expanded="true" signature="2708:2779" ph="SELECT * FRO... hub_table" />
-            <marker date="1550935754082" expanded="true" signature="3091:3564" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="3173:3564" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="3217:3564" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="3258:3519" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="3831:4287" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="4418:4764" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="4459:4719" ph="..." />
-            <marker date="1550935754082" expanded="true" signature="7093:7169" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/dashboard/view_progress.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <marker date="1550936796122" expanded="true" signature="2693:2764" ph="SELECT * FRO... hub_table" />
-            <marker date="1550936796122" expanded="true" signature="3076:3549" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="3158:3549" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="3202:3549" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="3243:3504" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="3816:4272" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="4403:4749" ph="..." />
-            <marker date="1550936796122" expanded="true" signature="4444:4704" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/supervisor/dashboard/view_assigned.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1051,25 +1012,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/search_progress.php">
+    <entry file="file://$PROJECT_DIR$/db/attachment_system.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="-4507">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
           <folding>
-            <element signature="e#6#115#0#PHP" expanded="true" />
-            <marker date="1550936795990" expanded="true" signature="350:450" ph="SELECT * FRO... student_table" />
-            <marker date="1550936795990" expanded="true" signature="1308:1364" ph="SELECT * FRO... task_table" />
-            <marker date="1550936795990" expanded="true" signature="1308:1389" ph="SELECT * FRO... task_table" />
-            <marker date="1550936795990" expanded="true" signature="1308:1408" ph="SELECT * FRO... task_table" />
+            <marker date="1550936937087" expanded="true" signature="303:367" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="369:435" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="437:501" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="503:532" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="686:1036" ph="CREATE TABLE... admin_table" />
+            <marker date="1550936937087" expanded="true" signature="1086:1354" ph="INSERT INTO `admin_table`... " />
+            <marker date="1550936937087" expanded="true" signature="1473:1765" ph="CREATE TABLE... attachment_table" />
+            <marker date="1550936937087" expanded="true" signature="1820:2014" ph="INSERT INTO `attachment_table`... " />
+            <marker date="1550936937087" expanded="true" signature="2126:2340" ph="CREATE TABLE... hub_table" />
+            <marker date="1550936937087" expanded="true" signature="2388:3501" ph="INSERT INTO `hub_table`... " />
+            <marker date="1550936937087" expanded="true" signature="3622:3937" ph="CREATE TABLE... notification_table" />
+            <marker date="1550936937087" expanded="true" signature="3994:5381" ph="INSERT INTO `notification_table`... " />
+            <marker date="1550936937087" expanded="true" signature="5497:5920" ph="CREATE TABLE... student_table" />
+            <marker date="1550936937087" expanded="true" signature="5972:6292" ph="INSERT INTO `student_table`... " />
+            <marker date="1550936937087" expanded="true" signature="6411:6771" ph="CREATE TABLE... supervisor_table" />
+            <marker date="1550936937087" expanded="true" signature="6826:7109" ph="INSERT INTO `supervisor_table`... " />
+            <marker date="1550936937087" expanded="true" signature="7222:7512" ph="CREATE TABLE... task_table" />
+            <marker date="1550936937087" expanded="true" signature="7561:8953" ph="INSERT INTO `task_table`... " />
+            <marker date="1550936937087" expanded="true" signature="9072:9380" ph="CREATE TABLE... university_table" />
+            <marker date="1550936937087" expanded="true" signature="9435:9662" ph="INSERT INTO `university_table`... " />
+            <marker date="1550936937087" expanded="true" signature="9742:9974" ph="ALTER TABLE `admin_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10023:10078" ph="ALTER TABLE `attachment_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10120:10168" ph="ALTER TABLE `hub_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10219:10311" ph="ALTER TABLE `notification_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10357:10409" ph="ALTER TABLE `student_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10458:10695" ph="ALTER TABLE `supervisor_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10738:10787" ph="ALTER TABLE `task_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10836:10891" ph="ALTER TABLE `university_table`... " />
+            <marker date="1550936937087" expanded="true" signature="10985:11074" ph="ALTER TABLE `admin_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11130:11224" ph="ALTER TABLE `attachment_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11273:11361" ph="ALTER TABLE `hub_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11419:11516" ph="ALTER TABLE `notification_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11569:11660" ph="ALTER TABLE `student_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11716:11810" ph="ALTER TABLE `supervisor_table`... " />
+            <marker date="1550936937087" expanded="true" signature="11860:11949" ph="ALTER TABLE `task_table`... " />
+            <marker date="1550936937087" expanded="true" signature="12005:12099" ph="ALTER TABLE `university_table`... " />
+            <marker date="1550936937087" expanded="true" signature="12110:12172" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="12174:12238" ph="/*!40101 SET... " />
+            <marker date="1550936937087" expanded="true" signature="12240:12302" ph="/*!40101 SET... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/dashboard/search_progress.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        <state relative-caret-position="320">
+          <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard/view_progress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <marker date="1550938081744" expanded="true" signature="2693:2764" ph="SELECT * FRO... hub_table" />
+            <marker date="1550938081744" expanded="true" signature="3076:3549" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="3158:3549" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="3202:3549" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="3243:3504" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="3816:4272" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="4403:4749" ph="..." />
+            <marker date="1550938081744" expanded="true" signature="4444:4704" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/search_progress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#115#0#PHP" expanded="true" />
+            <marker date="1550938081650" expanded="true" signature="350:450" ph="SELECT * FRO... student_table" />
+            <marker date="1550938081650" expanded="true" signature="1310:1366" ph="SELECT * FRO... task_table" />
+            <marker date="1550938081650" expanded="true" signature="1310:1391" ph="SELECT * FRO... task_table" />
+            <marker date="1550938081650" expanded="true" signature="1310:1410" ph="SELECT * FRO... task_table" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisor/dashboard/view_progress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1550938081838" expanded="true" signature="2708:2750" ph="SELECT * FRO... hub_table" />
+            <marker date="1550938081838" expanded="true" signature="2708:2779" ph="SELECT * FRO... hub_table" />
+            <marker date="1550938081838" expanded="true" signature="3091:3564" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="3173:3564" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="3217:3564" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="3258:3519" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="3831:4287" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="4418:4764" ph="..." />
+            <marker date="1550938081838" expanded="true" signature="4459:4719" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
