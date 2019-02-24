@@ -5,6 +5,6 @@
  */
 $appName = 'Supervision System';
 $adminName = 'TechGyal';
-$nationalID = '12345678';
-$adminEmail = 'admin@test.com';
+$nationalID = '33484697';
+$adminEmail = 'kosgeimercyj@gmail.com';
 $phoneNumber = '0725912502';

@@ -77,18 +77,28 @@ require '../sessions/supervisor_session.php';
                                       <th>NO</th>
                                     <th>Skill</th>
                                     <th>Skill Description</th>
+                                    <th>Comments</th>
                                     <th>Date/Time</th>
                                     </tr>
                                     </thead>';
                                 echo '<tbody>';
                                 // keeps getting the next row until there are no more to get
                                 while ($row = mysqli_fetch_array($result)) {
-                                    echo '<tr>
-                                                  <td><strong class="text-primary">AS/' . $row['id'] . '</strong></td>
-                                                  <td>' . $row['learn'] . '</td>
-                                                  <td>' . $row['skill'] . '</td>
-                                                  <td>' . date('F d, Y h:i a', strtotime($row['created_at'])) . '</td>
-                                                  </tr>';
+                                    echo "<tr><td>";
+                                    echo 'AS/' . $row['id'];
+                                    echo "</td><td>";
+                                    echo $row['learn'];
+                                    echo "</td><td>";
+                                    echo $row['skill'];
+                                    echo "</td><td>";
+                                    if (!empty($row['comment'])) {
+                                        echo $row['comment'];
+                                    } else {
+                                       echo '<a href="view_skill.php?action=read&id=' . $row["id"] . '" class="btn btn-info btn-md">Comment</a>';
+                                    }
+                                    echo "</td><td>";
+                                    echo date('F d, Y h:i a', strtotime($row['created_at']));
+                                    echo "</td></tr>";
                                 }
                                 echo '</tbody>';
                                 echo '<tfoot>
@@ -96,6 +106,7 @@ require '../sessions/supervisor_session.php';
                                      <th>NO</th>
                                     <th>Skill</th>
                                     <th>Skill Description</th>
+                                    <th>Comments</th>
                                     <th>Date/Time</th>
                                     </tr>
                                     </tfoot>
