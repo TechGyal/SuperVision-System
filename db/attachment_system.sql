@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 23, 2019 at 04:48 PM
+-- Generation Time: Feb 24, 2019 at 08:18 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -80,6 +80,7 @@ CREATE TABLE `hub_table` (
   `student_id` int(11) NOT NULL,
   `learn` longtext NOT NULL,
   `skill` longtext NOT NULL,
+  `comment` longtext,
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -87,23 +88,23 @@ CREATE TABLE `hub_table` (
 -- Dumping data for table `hub_table`
 --
 
-INSERT INTO `hub_table` (`id`, `student_id`, `learn`, `skill`, `created_at`) VALUES
-(1, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(2, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(3, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(4, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(5, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(6, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(7, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(8, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(9, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(10, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(11, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(12, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(13, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(14, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(15, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14'),
-(16, 1, 'Java', 'Learned about java FX', '2019-02-23 03:11:14');
+INSERT INTO `hub_table` (`id`, `student_id`, `learn`, `skill`, `comment`, `created_at`) VALUES
+(1, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(2, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(3, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(4, 1, 'Java', 'Learned about java FX', 'supervisor_comment', '2019-02-23 03:11:14'),
+(5, 1, 'Java', 'Learned about java FX', '$comment', '2019-02-23 03:11:14'),
+(6, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(7, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(8, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(9, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(10, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(11, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(12, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(13, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(14, 1, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(15, 2, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14'),
+(16, 2, 'Java', 'Learned about java FX', '', '2019-02-23 03:11:14');
 
 -- --------------------------------------------------------
 
@@ -127,9 +128,9 @@ CREATE TABLE `notification_table` (
 --
 
 INSERT INTO `notification_table` (`id`, `admin_id`, `supervisor_id`, `student_id`, `subject`, `message`, `status`, `created_at`) VALUES
-(1, 0, 1, 0, 'My Account', 'Your account secret code is DA826AEFFF', 0, '2019-02-23 07:54:19'),
+(1, 0, 1, 0, 'My Account', 'Your account secret code is DA826AEFFF', 1, '2019-02-23 07:54:19'),
 (2, 1, 0, 0, 'New Supervisor', 'Added new supervisor known as TechGuy', 1, '2019-02-23 07:54:19'),
-(3, 0, 1, 0, 'New Student', 'Assigned new student with registration number EB3/17613/14', 0, '2019-02-23 07:57:41'),
+(3, 0, 1, 0, 'New Student', 'Assigned new student with registration number EB3/17613/14', 1, '2019-02-23 07:57:41'),
 (4, 1, 0, 0, 'New Student', 'Added new student known as Vincent Ososi', 1, '2019-02-23 07:57:41'),
 (5, 0, 0, 1, 'My Account', 'Assigned new student with registration number EB3/17613/14', 0, '2019-02-23 07:57:41'),
 (6, 0, 0, 1, 'Java Task', 'Mysql and SQLite.', 0, '2019-02-23 09:07:27'),
@@ -164,7 +165,8 @@ CREATE TABLE `student_table` (
 --
 
 INSERT INTO `student_table` (`id`, `student_name`, `phone_number`, `national_id`, `email`, `address`, `gender`, `secret_code`, `password`, `created_at`) VALUES
-(1, 'Vincent Ososi', '0713255791', '31407936', 'ososiportal@gmail.com', '1316', 'Male', 'ACE9FDBF4D', '92694dc0110c1f528bac20f07d964b49', '2019-02-23 07:57:41');
+(1, 'Vincent Ososi', '0713255791', '31407936', 'ososiportal@gmail.com', '1316', 'Male', 'ACE9FDBF4D', '92694dc0110c1f528bac20f07d964b49', '2019-02-23 07:57:41'),
+(2, 'TTTTT', '0713255791', '12345678', 'ososiportal@gmail.com', '1316', 'Male', 'ACE9FDBF4D', '92694dc0110c1f528bac20f07d964b49', '2019-02-23 07:57:41');
 
 -- --------------------------------------------------------
 
@@ -340,7 +342,7 @@ ALTER TABLE `notification_table`
 -- AUTO_INCREMENT for table `student_table`
 --
 ALTER TABLE `student_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `supervisor_table`
