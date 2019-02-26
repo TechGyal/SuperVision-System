@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9065ff-ec0b-4f34-b02c-a082802afdd1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/comment.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/fetch_skill.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/supervisor/dashboard/view_skill.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard/view_progress.php" afterPath="$PROJECT_DIR$/admin/dashboard/view_progress.php" />
-      <change beforePath="$PROJECT_DIR$/inc/appNames.php" afterPath="$PROJECT_DIR$/inc/appNames.php" />
-      <change beforePath="$PROJECT_DIR$/student/dashboard/hub.php" afterPath="$PROJECT_DIR$/student/dashboard/hub.php" />
-      <change beforePath="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" afterPath="$PROJECT_DIR$/supervisor/dashboard/view_progress.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +95,7 @@
       <file leaf-file-name="view_progress.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/dashboard/view_progress.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="1744">
               <caret line="108" column="53" lean-forward="false" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
               <folding>
                 <marker date="1551035856024" expanded="true" signature="2733:2775" ph="SELECT * FRO... hub_table" />
@@ -286,38 +279,6 @@
               <item name="AS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,9 +325,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -393,7 +351,7 @@
       <workItem from="1550349249705" duration="6542000" />
       <workItem from="1550678313804" duration="13169000" />
       <workItem from="1550901077451" duration="24983000" />
-      <workItem from="1551032675395" duration="3166000" />
+      <workItem from="1551032675395" duration="4068000" />
     </task>
     <task id="LOCAL-00001" summary="Accommodated changes.">
       <created>1548609641620</created>
@@ -479,11 +437,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550938936118</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Comment modules">
+      <created>1551035888193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551035888193</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Database update.">
+      <created>1551035992021</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1551035992021</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147921000" />
+    <option name="totallyTimeSpent" value="148823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -497,12 +469,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -533,7 +505,9 @@
     <MESSAGE value="New functions added." />
     <MESSAGE value="New database." />
     <MESSAGE value="New changes to search." />
-    <option name="LAST_COMMIT_MESSAGE" value="New changes to search." />
+    <MESSAGE value="Comment modules" />
+    <MESSAGE value="Database update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Database update." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,6 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4507">
           <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +974,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/dashboard/view_progress.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="1744">
           <caret line="108" column="53" lean-forward="false" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
           <folding>
             <marker date="1551035856024" expanded="true" signature="2733:2775" ph="SELECT * FRO... hub_table" />
