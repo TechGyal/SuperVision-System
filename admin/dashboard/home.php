@@ -131,7 +131,7 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
                                         <a class="dropdown-item" href="profile.php">Profile</a>
                                         <a class="dropdown-item" href="changePassword.php">Change Password</a>
                                         <a class="dropdown-item" href="viewStudent.php">View Students</a>
-                                        <a class="dropdown-item" href="viewSupervisor.php">View Students</a>
+                                        <a class="dropdown-item" href="viewSupervisor.php">View Supervisors</a>
                                     </div>
                                 </div>
                             </div>

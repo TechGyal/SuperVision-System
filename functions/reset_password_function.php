@@ -40,11 +40,15 @@ if (isset($_POST['admin_reset'])) {
             $rows_update = mysqli_num_rows($query);
 
             if ($rows_update == 1) {
+                header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
                 echo '<script type="text/javascript">';
                 echo "setTimeout(function () { swal('Admin Password','Password changed successfully','success');";
                 echo '}, 100);</script>';
             }
         } else {
+            header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
             echo '<script type="text/javascript">';
             echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
             echo '}, 100);</script>';
@@ -84,11 +88,15 @@ if (isset($_POST['admin_reset'])) {
             $rows_update = mysqli_num_rows($query);
 
             if ($rows_update == 1) {
+                header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
                 echo '<script type="text/javascript">';
                 echo "setTimeout(function () { swal('Supervisor Password','Password changed successfully','success');";
                 echo '}, 100);</script>';
             }
         } else {
+            header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
             echo '<script type="text/javascript">';
             echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
             echo '}, 100);</script>';
@@ -128,11 +136,15 @@ if (isset($_POST['admin_reset'])) {
             $rows_update = mysqli_num_rows($query);
 
             if ($rows_update == 1) {
+                header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
                 echo '<script type="text/javascript">';
                 echo "setTimeout(function () { swal('Student Password','Password changed successfully','success');";
                 echo '}, 100);</script>';
             }
         } else {
+            header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
+
             echo '<script type="text/javascript">';
             echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
             echo '}, 100);</script>';

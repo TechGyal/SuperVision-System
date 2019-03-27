@@ -66,11 +66,11 @@ require '../../functions/fetch_notifications.php'
                     <i class="icon-menu menu-icon"></i>
                 </a>
             </li>
-<!--            <li class="nav-item">-->
-<!--                <form class="search-bar">-->
-<!--                    <input type="text" class="form-control" placeholder="Enter keywords">-->
-<!--                    <a href="javascript:void();"><i class="icon-magnifier"></i></a>-->
-<!--                </form>-->
+<!--           <li class="nav-item">-->
+<!--               <form class="search-bar" method="post" action="../../functions/search_progress.php">-->
+<!--                    <input type="text" name="detail" id="detail" class="form-control" placeholder="Search Student Progress">-->
+<!--                    <button type="submit" class="btn btn-link btn-sm"><i class="icon-magnifier"></i></button>-->
+<!--               </form>-->
 <!--            </li>-->
         </ul>
 
