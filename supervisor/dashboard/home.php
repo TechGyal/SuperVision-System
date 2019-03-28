@@ -141,12 +141,7 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
                             //we are going to ftech from attachmnet table all students managed by this supervisor
                             $resultAttachment = mysqli_query($connection, "SELECT * FROM attachment_table WHERE supervisor_id='$supervisor_id' ORDER BY id DESC ");
                             if (mysqli_num_rows($resultAttachment) > 0) {
-                                while ($rowAttachment = mysqli_fetch_array($resultAttachment)) {
-                                    $id = $rowAttachment['student_id'];
-
-                                    $result = mysqli_query($connection, "SELECT * FROM student_table WHERE id='$id'");
-                                    if (mysqli_num_rows($result) > 0) {
-                                        echo '<div class="table-responsive">
+                                echo '<div class="table-responsive">
                                 <table class="table align-items-center table-flush">
                                     <thead>
                                     <tr>
@@ -160,6 +155,11 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
                                         <th>Created At</th>
                                     </tr>
                                     </thead>';
+                                while ($rowAttachment = mysqli_fetch_array($resultAttachment)) {
+                                    $id = $rowAttachment['student_id'];
+
+                                    $result = mysqli_query($connection, "SELECT * FROM student_table WHERE id='$id'");
+                                    if (mysqli_num_rows($result) > 0) {
                                         echo '<tbody>';
                                         // keeps getting the next row until there are no more to get
                                         while ($row = mysqli_fetch_array($result)) {
@@ -195,7 +195,11 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
                                             echo "</td></tr>";
                                         }
                                         echo '</tbody>';
-                                        echo '<tfoot>
+                                    } else {
+                                        echo '<center><h2 class="text-danger text-uppercase">No Students Assigned To you yet.</h2></center>';
+                                    }
+                                }
+                                echo '<tfoot>
                                     <tr>
                                         <th>#</th>
                                         <th>Student Name</th>
@@ -208,10 +212,6 @@ while ($rowThree = mysqli_fetch_array($sqlThree)) {
                                     </tr>
                                     </tfoot>
                                 </table>';
-                                    } else {
-                                        echo '<center><h2 class="text-danger text-uppercase">No Students Assigned To you yet.</h2></center>';
-                                    }
-                                }
                             } else {
                                 echo '<center><h2 class="text-danger text-uppercase">No Students Assigned To you yet.</h2></center>';
                             }
