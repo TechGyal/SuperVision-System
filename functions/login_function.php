@@ -43,7 +43,7 @@ if (isset($_POST['admin_submit'])) {
         } else {
             $error = "National or Password is invalid";
 	        echo '<script type="text/javascript">';
-	        echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','error');";
+	        echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','warning');";
 	        echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection
@@ -80,7 +80,7 @@ if (isset($_POST['admin_submit'])) {
         } else {
             $error = "National or Password is invalid";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','error');";
+            echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','warning');";
             echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection
@@ -116,7 +116,7 @@ if (isset($_POST['admin_submit'])) {
         } else {
             $error = "National or Password is invalid";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','error');";
+            echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','warning');";
             echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection

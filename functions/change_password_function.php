@@ -25,7 +25,7 @@ if (isset($_POST['admin_reset'])) {
         if ($password != $confirm_password) {
             $error = "Password Don't Match";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         } else {
             $query = mysqli_query($connection, "select * from admin_table where national_id='$national_id' AND secret_code='$secret_code'");
@@ -39,7 +39,7 @@ if (isset($_POST['admin_reset'])) {
                 header("location: ../dashboard/home.php");// Redirecting To Other Page
             } else {
                 echo '<script type="text/javascript">';
-                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','error');";
+                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','warning');";
                 echo '}, 100);</script>';
             }
             mysqli_close($connection); // Closing Connection
@@ -61,7 +61,7 @@ if (isset($_POST['admin_reset'])) {
         if ($password != $confirm_password) {
             $error = "Password Don't Match";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         } else {
             $query = mysqli_query($connection, "select * from student_table where national_id='$national_id' AND secret_code='$secret_code'");
@@ -75,7 +75,7 @@ if (isset($_POST['admin_reset'])) {
                 header("location: ../dashboard/home.php");// Redirecting To Other Page
             } else {
                 echo '<script type="text/javascript">';
-                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','error');";
+                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','warning');";
                 echo '}, 100);</script>';
             }
             mysqli_close($connection); // Closing Connection
@@ -97,7 +97,7 @@ if (isset($_POST['admin_reset'])) {
         if ($password != $confirm_password) {
             $error = "Password Don't Match";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         } else {
             $query = mysqli_query($connection, "select * from supervisor_table where national_id='$national_id' AND secret_code='$secret_code'");
@@ -111,7 +111,7 @@ if (isset($_POST['admin_reset'])) {
                 header("location: ../dashboard/home.php");// Redirecting To Other Page
             } else {
                 echo '<script type="text/javascript">';
-                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','error');";
+                echo "setTimeout(function () { swal('Validation','Wrong National_ID or Secret Code','warning');";
                 echo '}, 100);</script>';
             }
             mysqli_close($connection); // Closing Connection

@@ -16,7 +16,7 @@ if (isset($_POST['super_assign_task'])) {
 
     if (!$student_id) {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('Task Assignment','Please select student'.,'error');";
+        echo "setTimeout(function () { swal('Task Assignment','Please select student'.,'warning');";
         echo '}, 100);</script>';
         mysqli_close($connection);
 

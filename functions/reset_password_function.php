@@ -31,7 +31,7 @@ if (isset($_POST['admin_reset'])) {
         if ($newPassword !== $confirmPassword) {
             $error = "";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         }
         if ($rows == 1) {
@@ -50,7 +50,7 @@ if (isset($_POST['admin_reset'])) {
             header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
 
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
+            echo "setTimeout(function () { swal('Validation','The current password does not match our records','warning');";
             echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection
@@ -79,7 +79,7 @@ if (isset($_POST['admin_reset'])) {
         if ($newPassword !== $confirmPassword) {
             $error = "";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         }
         if ($rows == 1) {
@@ -98,7 +98,7 @@ if (isset($_POST['admin_reset'])) {
             header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
 
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
+            echo "setTimeout(function () { swal('Validation','The current password does not match our records','warning');";
             echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection
@@ -127,7 +127,7 @@ if (isset($_POST['admin_reset'])) {
         if ($newPassword !== $confirmPassword) {
             $error = "";
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','Password Don't Match','error');";
+            echo "setTimeout(function () { swal('Validation','Password Don't Match','warning');";
             echo '}, 100);</script>';
         }
         if ($rows == 1) {
@@ -146,7 +146,7 @@ if (isset($_POST['admin_reset'])) {
             header("location: ../dashboard/changePassword.php");// Redirecting To Other Page
 
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Validation','The current password does not match our records','error');";
+            echo "setTimeout(function () { swal('Validation','The current password does not match our records','warning');";
             echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection

@@ -16,7 +16,7 @@ if (isset($_POST['save_skill'])) {
 
     if (!$student_id) {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('New Skill','Please all fields are required.','error');";
+        echo "setTimeout(function () { swal('New Skill','Please all fields are required.','warning');";
         echo '}, 100);</script>';
         mysqli_close($connection);
 

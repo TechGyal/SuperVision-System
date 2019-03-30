@@ -26,7 +26,7 @@ if ($query) {
     header("location: ../admin/dashboard/viewSupervisor.php");// Redirecting To Other Page
 } else {
     echo '<script type="text/javascript">';
-    echo "setTimeout(function () { swal('Supervisor Account','Failed to delete $name account','error');";
+    echo "setTimeout(function () { swal('Supervisor Account','Failed to delete $name account','warning');";
     echo '}, 100);</script>';
 
     header("location: ../admin/dashboard/viewSupervisor.php");// Redirecting To Other Page

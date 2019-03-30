@@ -25,7 +25,7 @@ if (isset($_POST['supervisor_comment'])) {
             header("location: ../dashboard/view_skill.php");// Redirecting To Other Page
         } else {
             echo '<script type="text/javascript">';
-            echo "setTimeout(function () { swal('Skill Comments','Sorry!! System failed to commit your comment.','error');";
+            echo "setTimeout(function () { swal('Skill Comments','Sorry!! System failed to commit your comment.','warning');";
             echo '}, 100);</script>';
             mysqli_close($connection);
 
@@ -34,7 +34,7 @@ if (isset($_POST['supervisor_comment'])) {
         }
     } else {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('Skill Comments','Sorry!! System failed to commit your comment.','error');";
+        echo "setTimeout(function () { swal('Skill Comments','Sorry!! System failed to commit your comment.','warning');";
         echo '}, 100);</script>';
         mysqli_close($connection);
 

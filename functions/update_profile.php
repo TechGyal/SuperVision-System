@@ -19,7 +19,7 @@ if (isset($_POST['update_admin'])) {
         echo '}, 100);</script>';
     } else {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('Account Update','Failed to update your account','error');";
+        echo "setTimeout(function () { swal('Account Update','Failed to update your account','warning');";
         echo '}, 100);</script>';
     }
 
@@ -36,7 +36,7 @@ if (isset($_POST['update_admin'])) {
         echo '}, 100);</script>';
     } else {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('Account Update','Failed to update your account','error');";
+        echo "setTimeout(function () { swal('Account Update','Failed to update your account','warning');";
         echo '}, 100);</script>';
     }
 
@@ -54,7 +54,7 @@ if (isset($_POST['update_admin'])) {
         echo '}, 100);</script>';
     } else {
         echo '<script type="text/javascript">';
-        echo "setTimeout(function () { swal('Account Update','Failed to update your account','error');";
+        echo "setTimeout(function () { swal('Account Update','Failed to update your account','warning');";
         echo '}, 100);</script>';
     }
 
