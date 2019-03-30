@@ -42,8 +42,8 @@
       <file leaf-file-name="Connection.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DBConnection/Connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="96">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -297,7 +297,7 @@
       <workItem from="1553785023495" duration="4182000" />
       <workItem from="1553931150843" duration="5976000" />
       <workItem from="1553953828525" duration="3222000" />
-      <workItem from="1553961665654" duration="208000" />
+      <workItem from="1553961665654" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="Accommodated changes.">
       <created>1548609641620</created>
@@ -460,11 +460,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553961821982</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updates.">
+      <created>1553961877450</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1553961877450</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179448000" />
+    <option name="totallyTimeSpent" value="179671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -874,8 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DBConnection/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="96">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
