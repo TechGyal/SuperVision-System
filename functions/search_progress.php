@@ -24,7 +24,7 @@ if (isset($_POST['admin_search_student'])) {
         echo '}, 100);</script>';
         mysqli_close($connection);
 
-        header("location: ../dashboard/search_progress.php");// Redirecting To Other Page
+//        header("location: ../dashboard/search_progress.php");// Redirecting To Other Page
 
     }
 }
@@ -50,7 +50,7 @@ if (isset($_POST['supervisor_search_student'])) {
         echo '}, 100);</script>';
         mysqli_close($connection);
 
-        header("location: ../dashboard/search_progress.php");// Redirecting To Other Page
+//        header("location: ../dashboard/search_progress.php");// Redirecting To Other Page
 
     }
 }
