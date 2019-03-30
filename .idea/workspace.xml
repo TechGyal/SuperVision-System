@@ -42,8 +42,8 @@
       <file leaf-file-name="Connection.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DBConnection/Connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="224">
+              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -199,6 +199,11 @@
               <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DBConnection" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="AS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -291,7 +296,7 @@
       <workItem from="1553784930452" duration="10000" />
       <workItem from="1553785023495" duration="4182000" />
       <workItem from="1553931150843" duration="5976000" />
-      <workItem from="1553953828525" duration="3009000" />
+      <workItem from="1553953828525" duration="3195000" />
     </task>
     <task id="LOCAL-00001" summary="Accommodated changes.">
       <created>1548609641620</created>
@@ -426,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553954306948</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updates.">
+      <created>1553961086096</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1553961086096</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179027000" />
+    <option name="totallyTimeSpent" value="179213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -931,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DBConnection/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
