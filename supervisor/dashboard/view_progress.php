@@ -114,7 +114,7 @@ require '../sessions/supervisor_session.php';
                             </div>';
                                 echo '</div>';
                             } else {
-                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet ' . $_SESSION['student_name'] . '.</h2></center>';
+                                echo '<center><h2 class="text-danger text-uppercase">No Skills Saved Yet For ' . $_SESSION['student_name'] . '.</h2></center>';
                             }
                         }
                         ?>
