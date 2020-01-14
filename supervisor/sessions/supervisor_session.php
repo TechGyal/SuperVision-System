@@ -2,7 +2,7 @@
 /*
  * connect to database
  * */
-require '../../DBConnection/Connection.php';
+require '../../db_connection/Connection.php';
 
 session_start(); // Starting Session
 // Storing Session

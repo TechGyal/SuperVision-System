@@ -7,7 +7,7 @@
 
 
 //first require this by checking the database connection connection
-require('../DBConnection/Connection.php');
+require('../db_connection/Connection.php');
 require('../inc/appNames.php');
 
 /**

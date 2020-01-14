@@ -5,7 +5,7 @@
  * have your all includes here
  * that's all the files you want to use here
  */
-require '../../DBConnection/Connection.php';
+require '../../db_connection/Connection.php';
 require '../../inc/appNames.php';
 require '../../functions/change_password_function.php';
 ?>

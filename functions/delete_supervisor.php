@@ -5,7 +5,7 @@
  */
 
 //include database connection
-require '../DBConnection/Connection.php';
+require '../db_connection/Connection.php';
 
 // get id
 $supervisor_id = $_GET["id"];
