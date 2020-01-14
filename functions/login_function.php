@@ -7,7 +7,7 @@
  * requests
 */
 
-require('../DBConnection/Connection.php');
+require('../db_connection/Connection.php');
 include_once 'js.php';
 
 session_start(); // Starting Session
