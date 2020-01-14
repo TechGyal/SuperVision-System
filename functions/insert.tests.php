@@ -18,7 +18,7 @@ $national_id = $nationalID;
 $email = $adminEmail;
 //generate a random secret code
 try {
-	$secret_code = strtoupper(bin2hex(openssl_random_pseudo_bytes(5)));
+    $secret_code = strtoupper(bin2hex(openssl_random_pseudo_bytes(5)));
 } catch (Exception $e) {
     return 504;
 }
@@ -38,7 +38,7 @@ if ($new_data) {
     mysqli_close($connection);
 
     //redirect back to this file
-    return 200;
+    return HttpMessage::factory('200');
 } else {
-    return 401;
+    return HttpMessage::factory('500');
 }
