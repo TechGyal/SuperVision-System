@@ -75,12 +75,12 @@ require '../../functions/fetch_notifications.php'
                     <i class="icon-menu menu-icon"></i>
                 </a>
             </li>
-<!--            <li class="nav-item">-->
-<!--                <form class="search-bar">-->
-<!--                    <input type="text" class="form-control" placeholder="Enter keywords">-->
-<!--                    <a href="javascript:void();"><i class="icon-magnifier"></i></a>-->
-<!--                </form>-->
-<!--            </li>-->
+            <!--            <li class="nav-item">-->
+            <!--                <form class="search-bar">-->
+            <!--                    <input type="text" class="form-control" placeholder="Enter keywords">-->
+            <!--                    <a href="javascript:void();"><i class="icon-magnifier"></i></a>-->
+            <!--                </form>-->
+            <!--            </li>-->
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
@@ -88,7 +88,7 @@ require '../../functions/fetch_notifications.php'
                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown"
                    href="../mailbox/inbox.php">
                     <i class="icon-bell"></i><span
-                            class="badge badge-primary badge-up"><?php echo number_format($unReadNotifications) ?></span></a>
+                        class="badge badge-primary badge-up"><?php echo number_format($unReadNotifications) ?></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <ul class="list-group list-group-flush">
                         <?php

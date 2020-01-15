@@ -68,9 +68,9 @@ require '../sessions/supervisor_session.php';
                             //we are going to ftech from attachmnet table all students managed by this supervisor
                             $resultAttachment = mysqli_query($connection, "SELECT * FROM attachment_table WHERE supervisor_id='$supervisor_id' ORDER BY id DESC ");
                             if (mysqli_num_rows($resultAttachment) > 0) {
-	                            echo '<div class="card-header"><i class="fa fa-table"></i> Student Details</div>';
-	                            echo '<div class="card-body">';
-	                            echo '<div class="table-responsive">
+                                echo '<div class="card-header"><i class="fa fa-table"></i> Student Details</div>';
+                                echo '<div class="card-body">';
+                                echo '<div class="table-responsive">
                                 <table id="example" class="table table-bordered">
                                     <thead>
                                     <tr>
@@ -84,7 +84,7 @@ require '../sessions/supervisor_session.php';
                                         <th>Created At</th>
                                     </tr>
                                     </thead>';
-	                            echo '<tbody>';
+                                echo '<tbody>';
                                 while ($rowAttachment = mysqli_fetch_array($resultAttachment)) {
                                     $id = $rowAttachment['student_id'];
 
@@ -129,7 +129,7 @@ require '../sessions/supervisor_session.php';
                                         echo '<center><h2 class="text-danger text-uppercase">No Students Assigned To you yet.</h2></center>';
                                     }
                                 }
-	                            echo '<tfoot>
+                                echo '<tfoot>
                                     <tr>
                                         <th>#</th>
                                         <th>Student Name</th>

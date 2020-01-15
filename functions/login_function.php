@@ -5,7 +5,7 @@
  * Supervisor
  * Student
  * requests
-*/
+ */
 
 require('../db_connection/Connection.php');
 include_once 'js.php';
@@ -36,15 +36,15 @@ if (isset($_POST['admin_submit'])) {
 
         /**
          * if correct credentials start a session
-        */
+         */
         if ($rows == 1) {
             $_SESSION['login_admin'] = $national_id; // Initializing Session
             header("location: ../admin/dashboard/home.php");// Redirecting To Other Page
         } else {
             $error = "National or Password is invalid";
-	        echo '<script type="text/javascript">';
-	        echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','warning');";
-	        echo '}, 100);</script>';
+            echo '<script type="text/javascript">';
+            echo "setTimeout(function () { swal('Validation','Wrong Entries Please Check And Try Again','warning');";
+            echo '}, 100);</script>';
         }
         mysqli_close($connection); // Closing Connection
     }

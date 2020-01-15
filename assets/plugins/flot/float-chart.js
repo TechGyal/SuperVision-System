@@ -1,10 +1,10 @@
-(function($) {
+(function ($) {
     'use strict';
     var data = [{
-            data: 18000,
-            color: '#223035',
-            label: 'Linda'
-        },
+        data: 18000,
+        color: '#223035',
+        label: 'Linda'
+    },
         {
             data: 20000,
             color: '#fd3550',
@@ -22,26 +22,26 @@
         }
     ];
 
-    if($("#pie-chart").length) {
-      $.plot("#pie-chart", data, {
-          series: {
-              pie: {
-                  show: true,
-                  radius: 1,
-                  label: {
-                      show: true,
-                      radius: 3 / 4,
-                      formatter: labelFormatter,
-                      background: {
-                          opacity: 0.5
-                      }
-                  }
-              }
-          },
-          legend: {
-              show: false
-          }
-      });
+    if ($("#pie-chart").length) {
+        $.plot("#pie-chart", data, {
+            series: {
+                pie: {
+                    show: true,
+                    radius: 1,
+                    label: {
+                        show: true,
+                        radius: 3 / 4,
+                        formatter: labelFormatter,
+                        background: {
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            legend: {
+                show: false
+            }
+        });
     }
 
     function labelFormatter(label, series) {
@@ -76,9 +76,9 @@
     ];
 
     var stackedData = [
-      {data: d1, color: "#008cff"},
-      {data: d2, color: "#15ca20"},
-      {data: d3, color: "#fd3550"}
+        {data: d1, color: "#008cff"},
+        {data: d2, color: "#15ca20"},
+        {data: d3, color: "#fd3550"}
     ];
     /*---------------------------------------------------
         Make some random data for Recent Items chart
@@ -151,14 +151,14 @@
 
     if ($("#line-chart").length) {
         $.plot($("#line-chart"), [{
-                data: d1,
-                lines: {
-                    show: true
-                },
-                label: 'Product A',
-                stack: true,
-                color: '#fd3550'
+            data: d1,
+            lines: {
+                show: true
             },
+            label: 'Product A',
+            stack: true,
+            color: '#fd3550'
+        },
             {
                 data: d2,
                 lines: {
@@ -181,13 +181,11 @@
     }
 
 
-
-
     /*---------------------------------
         Tooltips for Flot Charts
     ---------------------------------*/
     if ($(".flot-chart-line").length) {
-        $(".flot-chart-line").bind("plothover", function(event, pos, item) {
+        $(".flot-chart-line").bind("plothover", function (event, pos, item) {
             if (item) {
                 var x = item.datapoint[0].toFixed(2),
                     y = item.datapoint[1].toFixed(2);
@@ -201,7 +199,7 @@
         });
 
         $("<div class='flot-tooltip' class='chart-tooltip'></div>").appendTo("body");
-        
+
     }
 
     /*---------------------
@@ -249,12 +247,12 @@
         },
         xaxis: {
             tickDecimals: 0,
-            tickLength:0
+            tickLength: 0
         },
 
         yaxis: {
             tickDecimals: 0,
-            tickLength:0
+            tickLength: 0
         },
 
         legend: {
@@ -277,10 +275,10 @@
         },
         grid: {
             borderWidth: 0,
-            labelMargin:10,
+            labelMargin: 10,
             hoverable: true,
             clickable: true,
-            mouseActiveRadius:6,
+            mouseActiveRadius: 6,
 
         },
         xaxis: {
@@ -313,13 +311,11 @@
     }
 
 
-
-
     /*---------------------
      ----- COLUMN CHART -----
      ---------------------*/
 
-    $(function() {
+    $(function () {
 
         var data = [
             ["January", 10],
@@ -330,39 +326,38 @@
             ["June", 9]
         ];
 
-        if($("#column-chart").length) {
-          $.plot("#column-chart", [data], {
-              series: {
-                  bars: {
-                      show: true,
-                      barWidth: 0.6,
-                      align: "center"
-                  }
-              },
-              xaxis: {
-                  mode: "categories",
-                  tickLength: 0
-              },
+        if ($("#column-chart").length) {
+            $.plot("#column-chart", [data], {
+                series: {
+                    bars: {
+                        show: true,
+                        barWidth: 0.6,
+                        align: "center"
+                    }
+                },
+                xaxis: {
+                    mode: "categories",
+                    tickLength: 0
+                },
 
-              grid: {
-                  borderWidth: 0,
-                  labelMargin: 10,
-                  hoverable: true,
-                  clickable: true,
-                  mouseActiveRadius: 6,
-              }
+                grid: {
+                    borderWidth: 0,
+                    labelMargin: 10,
+                    hoverable: true,
+                    clickable: true,
+                    mouseActiveRadius: 6,
+                }
 
-          });
+            });
         }
     });
-
 
 
     /*--------------------------------
      ----- STACKED CHART -----
      --------------------------------*/
 
-    $(function() {
+    $(function () {
 
         var d1 = [];
         for (var i = 0; i <= 10; i += 1) {
@@ -379,36 +374,36 @@
             d3.push([i, parseInt(Math.random() * 30)]);
         }
 
-        if($("#stacked-bar-chart").length) {
-          $.plot("#stacked-bar-chart", stackedData, {
-              series: {
-                  stack: 0,
-                  lines: {
-                      show: false,
-                      fill: true,
-                      steps: false
-                  },
-                  bars: {
-                      show: true,
-                      fill: true,
-                      barWidth: 0.6
-                  },
-              },
-              grid: {
-                  borderWidth: 0,
-                  labelMargin: 10,
-                  hoverable: true,
-                  clickable: true,
-                  mouseActiveRadius: 6,
-              }
-          });
+        if ($("#stacked-bar-chart").length) {
+            $.plot("#stacked-bar-chart", stackedData, {
+                series: {
+                    stack: 0,
+                    lines: {
+                        show: false,
+                        fill: true,
+                        steps: false
+                    },
+                    bars: {
+                        show: true,
+                        fill: true,
+                        barWidth: 0.6
+                    },
+                },
+                grid: {
+                    borderWidth: 0,
+                    labelMargin: 10,
+                    hoverable: true,
+                    clickable: true,
+                    mouseActiveRadius: 6,
+                }
+            });
         }
     });
 
     /*--------------------------------
      ----- REALTIME CHART -----
      --------------------------------*/
-    $(function() {
+    $(function () {
 
         // We use an inline data source in the example, usually data would
         // be fetched from a server
@@ -450,38 +445,39 @@
         // Set up the control widget
 
         var updateInterval = 30;
-        if($("#realtime-chart").length) {
-          var plot = $.plot("#realtime-chart", [getRandomData()], {
-              series: {
-                  shadowSize: 0 // Drawing is faster without shadows
-              },
-              yaxis: {
-                  min: 0,
-                  max: 100
-              },
-              xaxis: {
-                  show: false
-              },
-              grid: {
-                  borderWidth: 0,
-                  labelMargin: 10,
-                  hoverable: true,
-                  clickable: true,
-                  mouseActiveRadius: 6,
-              }
+        if ($("#realtime-chart").length) {
+            var plot = $.plot("#realtime-chart", [getRandomData()], {
+                series: {
+                    shadowSize: 0 // Drawing is faster without shadows
+                },
+                yaxis: {
+                    min: 0,
+                    max: 100
+                },
+                xaxis: {
+                    show: false
+                },
+                grid: {
+                    borderWidth: 0,
+                    labelMargin: 10,
+                    hoverable: true,
+                    clickable: true,
+                    mouseActiveRadius: 6,
+                }
 
-          });
-          function update() {
+            });
 
-              plot.setData([getRandomData()]);
+            function update() {
 
-              // Since the axes don't change, we don't need to call plot.setupGrid()
+                plot.setData([getRandomData()]);
 
-              plot.draw();
-              setTimeout(update, updateInterval);
-          }
+                // Since the axes don't change, we don't need to call plot.setupGrid()
 
-          update();
+                plot.draw();
+                setTimeout(update, updateInterval);
+            }
+
+            update();
         }
 
     });
@@ -489,36 +485,36 @@
      ----- CURVED LINE CHART -----
      --------------------------------*/
 
-    $(function() {
+    $(function () {
 
-      var d1 = [
-          [0, 6],
-          [1, 14],
-          [2, 10],
-          [3, 14],
-          [4, 5]
-      ];
-      var d2 = [
-          [0, 6],
-          [1, 7],
-          [2, 11],
-          [3, 8],
-          [4, 11]
-      ];
-      var d3 = [
-          [0, 6],
-          [1, 5],
-          [2, 6],
-          [3, 10],
-          [4, 5]
-      ];
+        var d1 = [
+            [0, 6],
+            [1, 14],
+            [2, 10],
+            [3, 14],
+            [4, 5]
+        ];
+        var d2 = [
+            [0, 6],
+            [1, 7],
+            [2, 11],
+            [3, 8],
+            [4, 11]
+        ];
+        var d3 = [
+            [0, 6],
+            [1, 5],
+            [2, 6],
+            [3, 10],
+            [4, 5]
+        ];
 
-        if($("#curved-line-chart").length) {
-          $.plot($("#curved-line-chart"), [
-           {data: d1, lines: { show: true, fill: 0.98 }, label: 'Plans', stack: true, color: '#5E50F9' },
-           {data: d2, lines: { show: true, fill: 0.98 }, label: 'Purchase', stack: true, color: '#8C95FC' },
-           {data: d3, lines: { show: true, fill: 0.98 }, label: 'Services', stack: true, color: '#A8B4FD' }
-         ], curvedLineOptions);
+        if ($("#curved-line-chart").length) {
+            $.plot($("#curved-line-chart"), [
+                {data: d1, lines: {show: true, fill: 0.98}, label: 'Plans', stack: true, color: '#5E50F9'},
+                {data: d2, lines: {show: true, fill: 0.98}, label: 'Purchase', stack: true, color: '#8C95FC'},
+                {data: d3, lines: {show: true, fill: 0.98}, label: 'Services', stack: true, color: '#A8B4FD'}
+            ], curvedLineOptions);
         }
 
     });

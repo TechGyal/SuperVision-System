@@ -74,7 +74,7 @@ require '../sessions/admin_session.php';
                                                 <div class="btn-group mr-1">
                                                     <a href="inbox.php"
                                                        class="btn btn-outline-primary waves-effect waves-light"><i
-                                                                class="fa fa-refresh"></i></a>
+                                                            class="fa fa-refresh"></i></a>
                                                 </div>
                                             </div>
 
@@ -82,7 +82,8 @@ require '../sessions/admin_session.php';
 
                                         <div class="col-lg-4">
                                             <div class="position-relative has-icon-right">
-                                                <input type="text" class="form-control tableInput" placeholder="search mail" onkeyup="myFunction()">
+                                                <input type="text" class="form-control tableInput"
+                                                       placeholder="search mail" onkeyup="myFunction()">
                                                 <div class="form-control-position">
                                                     <i class="fa fa-search text-info"></i>
                                                 </div>

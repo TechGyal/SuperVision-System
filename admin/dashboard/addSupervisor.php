@@ -46,7 +46,7 @@ require '../../functions/add_supervisor_function.php';
                     <a href="home.php">
                         <div class="btn-group float-sm-right">
                             <button type="button" class="btn btn-outline-primary waves-effect waves-light"><i
-                                    class="fa fa-home mr-1"></i> Home
+                                        class="fa fa-home mr-1"></i> Home
                             </button>
                             <button type="button"
                                     class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light"
@@ -97,7 +97,9 @@ require '../../functions/add_supervisor_function.php';
                                 </div>
                             </div>
                             <div class="form-footer">
-                                <button type="submit" name="add_supervisor" class="btn btn-primary pull-right"><i class="fa fa-plus-square-o"></i> SAVE</button>
+                                <button type="submit" name="add_supervisor" class="btn btn-primary pull-right"><i
+                                            class="fa fa-plus-square-o"></i> SAVE
+                                </button>
                             </div>
                         </form>
                     </div>

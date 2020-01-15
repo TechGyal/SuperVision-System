@@ -36,7 +36,8 @@ require '../../functions/fetch_notifications.php'
             <ul class="sidebar-submenu">
                 <li><a href="../dashboard/assign_task.php"><i class="fa fa-circle-o"></i> Assign Task</a></li>
                 <li><a href="../dashboard/search_progress.php"><i class="fa fa-circle-o"></i> View Progress</a></li>
-                <li><a href="../dashboard/view_assigned.php"><i class="fa fa-circle-o"></i> View Assigned Students</a></li>
+                <li><a href="../dashboard/view_assigned.php"><i class="fa fa-circle-o"></i> View Assigned Students</a>
+                </li>
             </ul>
         </li>
 
@@ -66,19 +67,20 @@ require '../../functions/fetch_notifications.php'
                     <i class="icon-menu menu-icon"></i>
                 </a>
             </li>
-<!--           <li class="nav-item">-->
-<!--               <form class="search-bar" method="post" action="../../functions/search_progress.php">-->
-<!--                    <input type="text" name="detail" id="detail" class="form-control" placeholder="Search Student Progress">-->
-<!--                    <button type="submit" class="btn btn-link btn-sm"><i class="icon-magnifier"></i></button>-->
-<!--               </form>-->
-<!--            </li>-->
+            <!--           <li class="nav-item">-->
+            <!--               <form class="search-bar" method="post" action="../../functions/search_progress.php">-->
+            <!--                    <input type="text" name="detail" id="detail" class="form-control" placeholder="Search Student Progress">-->
+            <!--                    <button type="submit" class="btn btn-link btn-sm"><i class="icon-magnifier"></i></button>-->
+            <!--               </form>-->
+            <!--            </li>-->
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
             <li class="nav-item dropdown-lg">
-                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="../mailbox/inbox.php"  data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" href="../mailbox/inbox.php"
+                   data-toggle="dropdown">
                     <i class="icon-bell"></i><span
-                            class="badge badge-primary badge-up"><?php echo number_format($unReadNotifications) ?></span></a>
+                        class="badge badge-primary badge-up"><?php echo number_format($unReadNotifications) ?></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <ul class="list-group list-group-flush">
                         <?php

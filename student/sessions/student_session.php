@@ -22,7 +22,7 @@ $phone_number = $row['phone_number'];
 $gender = $row['gender'];
 
 //fetch university name
-$uniDetails = mysqli_query($connection,"select * from university_table where student_id='$student_id'");
+$uniDetails = mysqli_query($connection, "select * from university_table where student_id='$student_id'");
 $rowOne = mysqli_fetch_assoc($uniDetails);
 $uni_name = $rowOne['name'];
 $reg_no = $rowOne['reg_no'];
@@ -30,16 +30,15 @@ $year_of_study = $rowOne['year_of_study'];
 $course_of_study = $rowOne['course_of_study'];
 
 //fetch attachment details
-$attachmentDetails = mysqli_query($connection,"select * from attachment_table where student_id='$student_id'");
+$attachmentDetails = mysqli_query($connection, "select * from attachment_table where student_id='$student_id'");
 $rowThree = mysqli_fetch_assoc($attachmentDetails);
 $start_date = $rowThree['start_date'];
 $end_date = $rowThree['end_date'];
 $supervisor_id = $rowThree['supervisor_id'];
 
-$supervisor = mysqli_query($connection,"select * from supervisor_table where id='$supervisor_id'");
+$supervisor = mysqli_query($connection, "select * from supervisor_table where id='$supervisor_id'");
 $rowFour = mysqli_fetch_assoc($supervisor);
 $supervisor_name = $rowFour['supervisor_name'];
-
 
 
 if (!isset($national_id)) {

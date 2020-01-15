@@ -94,7 +94,7 @@ require '../sessions/supervisor_session.php';
                                     if (!empty($row['comment'])) {
                                         echo $row['comment'];
                                     } else {
-                                       echo '<a href="view_skill.php?action=read&id=' . $row["id"] . '" class="btn btn-info btn-md">Comment</a>';
+                                        echo '<a href="view_skill.php?action=read&id=' . $row["id"] . '" class="btn btn-info btn-md">Comment</a>';
                                     }
                                     echo "</td><td>";
                                     echo date('F d, Y h:i a', strtotime($row['created_at']));

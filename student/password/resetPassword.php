@@ -24,7 +24,8 @@ require '../../functions/change_password_function.php';
 
 <!-- Start wrapper-->
 <div id="wrapper">
-    <div class="card border-primary border-top-sm border-bottom-sm card-authentication1 mx-auto my-5 animated bounceInDown">
+    <div
+        class="card border-primary border-top-sm border-bottom-sm card-authentication1 mx-auto my-5 animated bounceInDown">
         <div class="card-body">
             <div class="card-content p-2">
                 <div class="card-title text-uppercase text-center pb-2">Student Reset Password</div>
@@ -32,7 +33,8 @@ require '../../functions/change_password_function.php';
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="national_id" class="sr-only">Enter National ID</label>
-                            <input type="text" name="national_id" id="national_id" class="form-control form-control-rounded"
+                            <input type="text" name="national_id" id="national_id"
+                                   class="form-control form-control-rounded"
                                    placeholder="Enter National ID" required>
                             <div class="form-control-position">
                                 <i class="icon-user"></i>
@@ -42,7 +44,8 @@ require '../../functions/change_password_function.php';
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="secret_code" class="sr-only">Enter Secret Code</label>
-                            <input type="text" name="secret_code" id="secret_code" class="form-control form-control-rounded"
+                            <input type="text" name="secret_code" id="secret_code"
+                                   class="form-control form-control-rounded"
                                    placeholder="Enter Secret Code" required>
                             <div class="form-control-position">
                                 <i class="icon-lock-open"></i>
@@ -52,7 +55,8 @@ require '../../functions/change_password_function.php';
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="password" class="sr-only">Enter New Password</label>
-                            <input type="password" name="password" id="password" class="form-control form-control-rounded"
+                            <input type="password" name="password" id="password"
+                                   class="form-control form-control-rounded"
                                    placeholder="Enter New Password" required>
                             <div class="form-control-position">
                                 <i class="icon-lock"></i>
@@ -62,7 +66,8 @@ require '../../functions/change_password_function.php';
                     <div class="form-group">
                         <div class="position-relative has-icon-right">
                             <label for="confirm_password" class="sr-only">Enter Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-rounded"
+                            <input type="password" name="confirm_password" id="confirm_password"
+                                   class="form-control form-control-rounded"
                                    placeholder="Enter Confirm Password" required>
                             <div class="form-control-position">
                                 <i class="icon-lock"></i>

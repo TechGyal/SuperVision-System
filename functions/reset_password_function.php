@@ -55,7 +55,7 @@ if (isset($_POST['admin_reset'])) {
         }
         mysqli_close($connection); // Closing Connection
     }
-}elseif (isset($_POST['supervisor_reset'])){
+} elseif (isset($_POST['supervisor_reset'])) {
     if (empty($_POST['currentPassword']) || empty($_POST['newPassword']) || empty($_POST['confirmPassword'])) {
         $error = "Password Don't Match";
         echo '<script type="text/javascript">';
@@ -103,7 +103,7 @@ if (isset($_POST['admin_reset'])) {
         }
         mysqli_close($connection); // Closing Connection
     }
-}elseif (isset($_POST['student_reset'])){
+} elseif (isset($_POST['student_reset'])) {
     if (empty($_POST['currentPassword']) || empty($_POST['newPassword']) || empty($_POST['confirmPassword'])) {
         $error = "Password Don't Match";
         echo '<script type="text/javascript">';

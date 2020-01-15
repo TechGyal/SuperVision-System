@@ -11,7 +11,7 @@
 [data-simplebar] {
     position: relative;
     z-index: 0;
-    overflow: hidden!important;
+    overflow: hidden !important;
     max-height: inherit;
     -webkit-overflow-scrolling: touch; /* Trigger native scrolling for mobile, if not supported, plugin is used. */
 }
@@ -23,20 +23,20 @@
 }
 
 .simplebar-scroll-content {
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
     overflow-y: scroll;
-    min-width: 100%!important;
-    max-height: inherit!important;
-    -webkit-box-sizing: content-box!important;
-            box-sizing: content-box!important;
+    min-width: 100% !important;
+    max-height: inherit !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
 }
 
 .simplebar-content {
-    overflow-y: hidden!important;
+    overflow-y: hidden !important;
     overflow-x: scroll;
-    -webkit-box-sizing: border-box!important;
-            box-sizing: border-box!important;
-    min-height: 100%!important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    min-height: 100% !important;
 }
 
 .simplebar-track {
