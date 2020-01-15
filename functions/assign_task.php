@@ -5,7 +5,7 @@
  */
 
 //get the current time
-$now = date('Y-m-d h:i:s a');
+$now = date('Y-m-d h:i:s');
 
 if (isset($_POST['super_assign_task'])) {
     $supervisor_id = mysqli_real_escape_string($connection, $_POST['supervisor_id']);

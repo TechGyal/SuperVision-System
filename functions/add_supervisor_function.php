@@ -12,7 +12,7 @@ try {
     return 504;
 }
 
-$now = date('Y-m-d h:i:s a');
+$now = date('Y-m-d h:i:s');
 
 if (isset($_POST['add_supervisor'])) {
     //get data from fields
@@ -41,7 +41,7 @@ if (isset($_POST['add_supervisor'])) {
     } else {
         //query
         $sqlm = "INSERT INTO supervisor_table (supervisor_name,email,phone_number,national_id,secret_code,password,created_at) VALUES ('$supervisor_name','$email','$phone_number','$national_id','$secret_code','$password','$now')";
-        $status = mysqli_query($connection, $sqlm);
+        mysqli_query($connection, $sqlm);
 
         /**
          * fetch supervisor id

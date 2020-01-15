@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.0
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 15, 2020 at 12:38 AM
--- Server version: 5.7.28-0ubuntu0.18.04.4
--- PHP Version: 7.3.13-1+ubuntu18.04.1+deb.sury.org+1
+-- Generation Time: Jan 24, 2019 at 03:21 PM
+-- Server version: 5.7.24-0ubuntu0.18.04.1
+-- PHP Version: 7.2.10-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,6 +41,15 @@ CREATE TABLE `admin_table`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
 
+--
+-- Dumping data for table `admin_table`
+--
+
+INSERT INTO `admin_table` (`id`, `admin_name`, `email`, `phone_number`, `national_id`, `secret_code`, `password`,
+                           `created_at`)
+VALUES (1, ' TechGyal', 'admin@test.com', '0725912502', '12345678', '49498', '25d55ad283aa400af464c76d713c07ad',
+        '2018-11-18 05:21:52');
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +67,13 @@ CREATE TABLE `attachment_table`
     `created_at`    datetime     NOT NULL
 ) ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
+
+--
+-- Dumping data for table `attachment_table`
+--
+
+-- INSERT INTO `attachment_table` (`id`, `student_id`, `start_date`, `end_date`, `section`, `supervisor_id`, `created_at`) VALUES
+-- (1, 1, '2018-11-30', '2019-06-29', 'ICT', 1, '2018-11-18 09:10:48');
 
 -- --------------------------------------------------------
 
@@ -115,6 +131,13 @@ CREATE TABLE `student_table`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
 
+--
+-- Dumping data for table `student_table`
+--
+
+-- INSERT INTO `student_table` (`id`, `student_name`, `phone_number`, `national_id`, `email`, `address`, `gender`, `secret_code`, `password`, `created_at`) VALUES
+-- (1, 'Vincent Ososi', '12345678', '12345678', 'generaloisebe@gmail.com', '1316', 'Male', '13675', '25d55ad283aa400af464c76d713c07ad', '2018-11-18 09:10:48');
+
 -- --------------------------------------------------------
 
 --
@@ -134,6 +157,13 @@ CREATE TABLE `supervisor_table`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
 
+--
+-- Dumping data for table `supervisor_table`
+--
+
+-- INSERT INTO `supervisor_table` (`id`, `supervisor_name`, `email`, `phone_number`, `national_id`, `secret_code`, `password`, `created_at`) VALUES
+-- (1, 'Vincent', 'generaloisebe@gmail.com', '12345678', '12345678', '30775', '25d55ad283aa400af464c76d713c07ad', '2018-11-18 07:06:28');
+
 -- --------------------------------------------------------
 
 --
@@ -151,6 +181,13 @@ CREATE TABLE `university_table`
     `created_at`      datetime     NOT NULL
 ) ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
+
+--
+-- Dumping data for table `university_table`
+--
+
+-- INSERT INTO `university_table` (`id`, `student_id`, `name`, `reg_no`, `year_of_study`, `course_of_study`, `created_at`) VALUES
+-- (1, 1, 'Maasai Mara University', 'EB3/17613/14', 1, 'Bsc Applied Computer Science', '2018-11-18 09:10:48');
 
 --
 -- Indexes for dumped tables
@@ -221,13 +258,15 @@ ALTER TABLE `university_table`
 -- AUTO_INCREMENT for table `admin_table`
 --
 ALTER TABLE `admin_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 --
 -- AUTO_INCREMENT for table `attachment_table`
 --
 ALTER TABLE `attachment_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 --
 -- AUTO_INCREMENT for table `hub_table`
@@ -239,25 +278,29 @@ ALTER TABLE `hub_table`
 -- AUTO_INCREMENT for table `notification_table`
 --
 ALTER TABLE `notification_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 4;
 
 --
 -- AUTO_INCREMENT for table `student_table`
 --
 ALTER TABLE `student_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 --
 -- AUTO_INCREMENT for table `supervisor_table`
 --
 ALTER TABLE `supervisor_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 --
 -- AUTO_INCREMENT for table `university_table`
 --
 ALTER TABLE `university_table`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,
+    AUTO_INCREMENT = 2;
 
 --
 -- Constraints for dumped tables
@@ -294,4 +337,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;
-

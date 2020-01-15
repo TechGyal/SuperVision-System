@@ -23,7 +23,7 @@ try {
     return 504;
 }
 $password = md5($national_id);
-$now = date('Y-m-d h:i:s a');
+$now = date('Y-m-d h:i:s');
 
 $sql_statement = "INSERT INTO admin_table 
 (admin_name,email,phone_number,national_id,secret_code,password,created_at)"

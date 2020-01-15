@@ -12,7 +12,7 @@ try {
     return 504;
 }
 
-$now = date('Y-m-d h:i:s a');
+$now = date('Y-m-d h:i:s');
 
 if (isset($_POST['add_student'])) {
     //get data from fields
